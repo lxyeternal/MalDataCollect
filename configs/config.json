@@ -5,7 +5,7 @@
     "dataset_maven": "../dataset/maven/",
     "dataset_nuget": "../dataset/nuget/",
     "records": "../records",
-    "chromedriver": "../utils/chromedriver/linux64/chromedriver",
+    "chromedriver": "../utils/chromedriver/macarm/chromedriver",
     "snyk_baseurl": "https://security.snyk.io/",
     "synk_vulurl": "https://security.snyk.io/vuln/",
     "record_file": "{}_snyk_malicious.csv"
