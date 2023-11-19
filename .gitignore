@@ -1,3 +1,4 @@
 # 忽略特定目录
 .idea/
+dataset/
 *.DS_Store
