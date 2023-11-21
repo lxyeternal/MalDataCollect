@@ -12,6 +12,8 @@
 
 
 import json
+import os
+
 from file_operation import read_stop_file
 from codes.snyk_database import SnykDatabase
 from codes.pypi_collect import pypi_pkg_links
@@ -39,12 +41,31 @@ class CollectMain:
         self.snyk_baseurl = self.config["snyk_baseurl"]
         self.synk_vulurl = self.config["synk_vulurl"]
         self.stop_file = self.config["stop_file"]
+        self.collected_pkgs = []
         self.stop_packages = read_stop_file(self.stop_file)
         self.snykdatabase = SnykDatabase(self.record_file, self.chromedriver, self.snyk_baseurl, self.synk_vulurl, self.stop_file, self.stop_packages)
 
 
+    def find_collected_pkgs(self):
+        if self.manager == "pip":
+            self.collected_pkgs = os.listdir(self.dataset_pypi)
+        elif self.manager == "npm":
+            self.collected_pkgs = os.listdir(self.dataset_npm)
+            self.collected_pkgs = [pkg.replace("##", "/") for pkg in self.collected_pkgs]
+        elif self.manager == "golang":
+            self.collected_pkgs = os.listdir(self.dataset_go)
+        elif self.manager == "maven":
+            self.collected_pkgs = os.listdir(self.dataset_maven)
+        elif self.manager == "nuget":
+            self.collected_pkgs = os.listdir(self.dataset_nuget)
+        elif self.manager == "rubygems":
+            self.collected_pkgs = os.listdir(self.dataset_rubygems)
+        else:
+            pass
+
     def start(self):
-        for snyk_index in range(15, 30):
+        self.find_collected_pkgs()
+        for snyk_index in range(1, 5):
             print("正在采集第 {} 页数据".format(snyk_index))
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
