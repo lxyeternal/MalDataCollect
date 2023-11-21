@@ -32,6 +32,10 @@ class CollectMain:
         self.chromedriver = self.config["chromedriver"]
         self.dataset_pypi = self.config["dataset_pypi"]
         self.dataset_npm = self.config["dataset_npm"]
+        self.dataset_go = self.config["dataset_go"]
+        self.dataset_maven = self.config["dataset_maven"]
+        self.dataset_nuget = self.config["dataset_nuget"]
+        self.dataset_rubygems = self.config["dataset_rubygems"]
         self.snyk_baseurl = self.config["snyk_baseurl"]
         self.synk_vulurl = self.config["synk_vulurl"]
         self.stop_file = self.config["stop_file"]
@@ -40,7 +44,7 @@ class CollectMain:
 
 
     def start(self):
-        for snyk_index in range(1, 30):
+        for snyk_index in range(15, 30):
             print("正在采集第 {} 页数据".format(snyk_index))
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
@@ -49,6 +53,14 @@ class CollectMain:
                     flag = pypi_pkg_links(self.pypi_mirrors, snyk_pkg[1], self.dataset_pypi)
                 elif self.manager == "npm":
                     flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_npm)
+                elif self.manager == "golang":
+                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_go)
+                elif self.manager == "maven":
+                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_maven)
+                elif self.manager == "nuget":
+                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_nuget)
+                elif self.manager == "rubygems":
+                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_rubygems)
                 else:
                     flag = 0
                     pass

@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	c
+npm	@xvideos/auth
 nuget	d
 pip	pykooler

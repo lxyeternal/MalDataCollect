@@ -4,6 +4,7 @@
     "dataset_go": "../dataset/go/",
     "dataset_maven": "../dataset/maven/",
     "dataset_nuget": "../dataset/nuget/",
+    "dataset_rubygems": "../dataset/rubygems/",
     "records": "../records",
     "chromedriver": "../utils/chromedriver/macarm/chromedriver",
     "snyk_baseurl": "https://security.snyk.io/",
@@ -13,5 +14,6 @@
     "pypi_mirrors": {"tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "tencent": "http://mirrors.cloud.tencent.com/pypi/", "douban": "http://pypi.doubanio.com/", "sustech": "https://mirrors.sustech.edu.cn/pypi/"},
     "npm_mirrors": {"taobao": "https://registry.npmmirror.com/", "tencent": "http://mirrors.cloud.tencent.com/npm/", "huawei": "https://mirrors.huaweicloud.com/repository/npm/", "cnpmjs": "https://r.cnpmjs.org/"},
     "go_mirrors": {"tencent": "https://mirrors.cloud.tencent.com/go/", "huawei": "https://repo.huaweicloud.com/repository/goproxy/", "douban": "http://goproxy.cn/", "aliyun": "https://mirrors.aliyun.com/goproxy/"},
-    "maven_mirrors": {"tsinghua": "https://repo1.maven.org/maven2/", "tencent": "http://mirrors.cloud.tencent.com/maven/", "douban": "http://repo1.maven.org/maven2/", "sustech": "https://mirrors.sustech.edu.cn/maven/"}
+    "maven_mirrors": {"tsinghua": "https://repo1.maven.org/maven2/", "tencent": "http://mirrors.cloud.tencent.com/maven/", "douban": "http://repo1.maven.org/maven2/", "sustech": "https://mirrors.sustech.edu.cn/maven/"},
+    "rubygems_mirrors": {"tencent": "https://mirrors.cloud.tencent.com/rubygems/gems/", "aliyun": "https://mirrors.aliyun.com/rubygems/"}
 }
