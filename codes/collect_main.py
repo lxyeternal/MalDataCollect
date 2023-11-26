@@ -10,14 +10,13 @@
 # Description：
 """
 
-
-import json
 import os
-
+import json
 from file_operation import read_stop_file
 from codes.snyk_database import SnykDatabase
 from codes.pypi_collect import pypi_pkg_links
 from codes.npm_collect import npm_pkg_links
+from codes.nuget_collect import nuget_pkg_links
 
 
 class CollectMain:
@@ -26,6 +25,7 @@ class CollectMain:
         self.config_path = "../configs/config.json"
         with open(self.config_path, "r") as fr:
             self.config = json.load(fr)
+        self.nuget_mirrors = self.config["nuget_mirrors"]
         self.npm_mirrors = self.config["npm_mirrors"]
         self.go_mirrors = self.config["go_mirrors"]
         self.maven_mirrors = self.config["maven_mirrors"]
@@ -65,7 +65,7 @@ class CollectMain:
 
     def start(self):
         self.find_collected_pkgs()
-        for snyk_index in range(1, 5):
+        for snyk_index in range(1, 30):
             print("正在采集第 {} 页数据".format(snyk_index))
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
@@ -74,12 +74,12 @@ class CollectMain:
                     flag = pypi_pkg_links(self.pypi_mirrors, snyk_pkg[1], self.dataset_pypi)
                 elif self.manager == "npm":
                     flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_npm)
+                elif self.manager == "nuget":
+                    flag = nuget_pkg_links(self.nuget_mirrors, snyk_pkg[1], self.dataset_nuget)
                 elif self.manager == "golang":
                     flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_go)
                 elif self.manager == "maven":
                     flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_maven)
-                elif self.manager == "nuget":
-                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_nuget)
                 elif self.manager == "rubygems":
                     flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_rubygems)
                 else:
@@ -90,5 +90,5 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("npm")
+    collect_main = CollectMain("nuget")
     collect_main.start()

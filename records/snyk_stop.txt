@@ -1,5 +1,5 @@
 go	a
 maven	b
 npm	@xvideos/auth
-nuget	d
+nuget	avalonnetcore
 pip	pykooler
