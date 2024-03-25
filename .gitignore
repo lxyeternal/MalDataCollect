@@ -4,3 +4,4 @@ dataset/
 *.DS_Store
 codes/__pycache__/
 DS_Store
+utils/chromedriver/
