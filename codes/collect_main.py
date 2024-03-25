@@ -17,6 +17,7 @@ from codes.snyk_database import SnykDatabase
 from codes.pypi_collect import pypi_pkg_links
 from codes.npm_collect import npm_pkg_links
 from codes.nuget_collect import nuget_pkg_links
+from file_operation import write_snyk_pkginfo
 
 
 class CollectMain:
@@ -65,10 +66,12 @@ class CollectMain:
 
     def start(self):
         self.find_collected_pkgs()
-        for snyk_index in range(1, 30):
+        for snyk_index in range(1, 10):
             print("正在采集第 {} 页数据".format(snyk_index))
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
+                if snyk_pkg[1] in self.collected_pkgs:
+                    continue
                 #  从镜像网站中下载恶意数据源代码
                 if self.manager == "pip":
                     flag = pypi_pkg_links(self.pypi_mirrors, snyk_pkg[1], self.dataset_pypi)
@@ -87,8 +90,12 @@ class CollectMain:
                     pass
                 if flag:
                     self.snykdatabase.snyk_pkginfo(self.manager, snyk_pkg[0], snyk_pkg[1], snyk_pkg[2])
+                else:
+                    format_info_list = [self.manager, snyk_pkg[1], snyk_pkg[0], "", snyk_pkg[2], "No source code"]
+                    write_snyk_pkginfo(self.record_file, format_info_list)
+
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("nuget")
+    collect_main = CollectMain("npm")
     collect_main.start()

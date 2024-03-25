@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	@xvideos/auth
-nuget	avalonnetcore
-pip	pykooler
+npm	iifl_android_app
+nuget	pathoschild.stardew.mod.buildconfig
+pip	httprequesthub
