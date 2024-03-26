@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from file_operation import mkdir
 
 
-def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi) -> int:
+def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi, version=None) -> int:
     flag = 0
     versions = set()
     extension_tar = ".tar.gz"
@@ -42,20 +42,32 @@ def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi) -> int:
                 link_filename = a.text.lower()
                 if link_filename.endswith(extension_whl) or link_filename.endswith(extension_tar) or link_filename.endswith(extension_zip):
                     try:
-                        version = link_filename.replace(pkgname + '-', "").replace(extension_tar, "").replace(extension_zip, "").replace(extension_whl, "").replace("-py3-none-any","").replace('/', '-')
-                        if version in versions:
+                        extracted_version = link_filename.replace(pkgname + '-', "").replace(extension_tar, "").replace(extension_zip, "").replace(extension_whl, "").replace("-py3-none-any","").replace('/', '-')
+                        if version and version == extracted_version:
+                            source_code_filename = os.path.join(dataset_pypi, pkgname, extracted_version, link_filename)
+                            file_response = requests.get(download_link)
+                            if file_response.status_code == 200:
+                                print(mirror)
+                                mkdir(dataset_pypi, pkgname, extracted_version)
+                                with open(source_code_filename, "ab") as f:
+                                    f.write(file_response.content)
+                                    f.flush()
+                                    versions.add(extracted_version)
+                                    flag = 2
+                                    break
+                        if extracted_version in versions:
                             continue
                     except:
-                        version = 'aaa.bbb.ccc'
-                    source_code_filename = os.path.join(dataset_pypi, pkgname, version, link_filename)
+                        extracted_version = 'aaa.bbb.ccc'
+                    source_code_filename = os.path.join(dataset_pypi, pkgname, extracted_version, link_filename)
                     file_response = requests.get(download_link)
                     if file_response.status_code == 200:
                         print(mirror)
-                        mkdir(dataset_pypi, pkgname, version)
+                        mkdir(dataset_pypi, pkgname, extracted_version)
                         with open(source_code_filename, "ab") as f:
                             f.write(file_response.content)
                             f.flush()
-                            versions.add(version)
+                            versions.add(extracted_version)
                             flag = 1
         if flag:
             break
