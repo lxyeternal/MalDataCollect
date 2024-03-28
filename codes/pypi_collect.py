@@ -43,7 +43,7 @@ def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi, version=None) -> int:
                 if link_filename.endswith(extension_whl) or link_filename.endswith(extension_tar) or link_filename.endswith(extension_zip):
                     try:
                         extracted_version = link_filename.replace(pkgname + '-', "").replace(extension_tar, "").replace(extension_zip, "").replace(extension_whl, "").replace("-py3-none-any","").replace('/', '-')
-                        if version and version == extracted_version:
+                        if version and extracted_version in version:
                             source_code_filename = os.path.join(dataset_pypi, pkgname, extracted_version, link_filename)
                             file_response = requests.get(download_link)
                             if file_response.status_code == 200:

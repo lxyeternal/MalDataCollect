@@ -9,7 +9,7 @@
 # version   : python 3.8
 # Description：
 """
-
+import ast
 import os
 import json
 from file_operation import read_stop_file
@@ -26,6 +26,7 @@ class CollectMain:
         self.config_path = "../configs/config.json"
         with open(self.config_path, "r") as fr:
             self.config = json.load(fr)
+        self.osv_link = self.config["osv_link"]
         self.nuget_mirrors = self.config["nuget_mirrors"]
         self.npm_mirrors = self.config["npm_mirrors"]
         self.go_mirrors = self.config["go_mirrors"]
@@ -109,8 +110,12 @@ class CollectMain:
         with open(self.pip_manual_file, "r") as fr:
             for line in fr:
                 pkg = line.strip().split("\t")
-                pkg_name = pkg[0]
-                pkg_version = pkg[1]
+                if len(pkg) == 1:
+                    pkg_name = pkg[0]
+                    pkg_version = None
+                else:
+                    pkg_name = pkg[0]
+                    pkg_version = ast.literal_eval(pkg[1])
                 print(self.manager, pkg_name, pkg_version)
                 if pkg_name in self.collected_pkgs:
                     print("已经采集过该包：{}".format(pkg[1]))
@@ -136,6 +141,13 @@ class CollectMain:
                 else:
                     format_info_list = [self.manager, pkg_name, "", "", pkg_version, "No source code"]
                     write_snyk_pkginfo(self.record_file, format_info_list)
+
+
+
+    def collect_osv(self):
+        pass
+
+
 
 
     def collect_snyk(self):

@@ -1,4 +1,5 @@
 {
+    "osv_link": "",
     "dataset_pypi": "../../../MalDataset/pypi/",
     "dataset_npm": "../../../MalDataset/npm/",
     "dataset_go": "../../../MalDataset/go/",

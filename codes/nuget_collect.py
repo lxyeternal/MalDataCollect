@@ -15,7 +15,6 @@ import requests
 from file_operation import mkdir
 
 
-
 def nuget_pkg_links(nuget_mirrors, pkgname, dataset_nuget) -> int:
     flag = 0
     for mirror, url in nuget_mirrors.items():
