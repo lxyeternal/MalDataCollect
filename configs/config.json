@@ -15,7 +15,7 @@
     "npm_manual_file": "../records/npm_manual_packages.txt",
     "rubygems_manual_file": "../records/rubygems_manual_packages.txt",
     "stop_file": "../records/snyk_stop.txt",
-    "pypi_mirrors": {"tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "tencent": "http://mirrors.cloud.tencent.com/pypi/", "douban": "http://pypi.doubanio.com/", "sustech": "https://mirrors.sustech.edu.cn/pypi/"},
+    "pypi_mirrors": {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"},
     "npm_mirrors": {"taobao": "https://registry.npmmirror.com/", "tencent": "http://mirrors.cloud.tencent.com/npm/", "huawei": "https://mirrors.huaweicloud.com/repository/npm/", "cnpmjs": "https://r.cnpmjs.org/"},
     "go_mirrors": {"tencent": "https://mirrors.cloud.tencent.com/go/", "huawei": "https://repo.huaweicloud.com/repository/goproxy/", "douban": "http://goproxy.cn/", "aliyun": "https://mirrors.aliyun.com/goproxy/"},
     "maven_mirrors": {"tsinghua": "https://repo1.maven.org/maven2/", "tencent": "http://mirrors.cloud.tencent.com/maven/", "douban": "http://repo1.maven.org/maven2/", "sustech": "https://mirrors.sustech.edu.cn/maven/"},

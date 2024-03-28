@@ -76,49 +76,13 @@ class CollectMain:
             for line in fr:
                 pkg = line.strip().split("\t")
                 pkg_name = pkg[0]
-                pkg_version = pkg[1]
-                print(self.manager, pkg_name, pkg_version)
-                if pkg_name in self.collected_pkgs:
-                    print("已经采集过该包：{}".format(pkg[1]))
-                    continue
-                if self.manager == "pip":
-                    flag = pypi_pkg_links(self.pypi_mirrors, pkg_name, self.dataset_pypi, pkg_version)
-                elif self.manager == "npm":
-                    flag = npm_pkg_links(self.npm_mirrors, pkg_name, self.dataset_npm)
-                elif self.manager == "nuget":
-                    flag = nuget_pkg_links(self.nuget_mirrors, pkg_name, self.dataset_nuget)
-                elif self.manager == "golang":
-                    flag = npm_pkg_links(self.go_mirrors, pkg_name, self.dataset_go)
-                elif self.manager == "maven":
-                    flag = npm_pkg_links(self.maven_mirrors, pkg_name, self.dataset_maven)
-                elif self.manager == "rubygems":
-                    flag = npm_pkg_links(self.npm_mirrors, pkg_name, self.dataset_rubygems)
-                else:
-                    flag = 0
-                    pass
-                if flag:
-                    format_info_list = [self.manager, pkg_name, "", "", pkg_version, "manual"]
-                    write_snyk_pkginfo(self.record_file, format_info_list)
-                else:
-                    format_info_list = [self.manager, pkg_name, "", "", pkg_version, "No source code"]
-                    write_snyk_pkginfo(self.record_file, format_info_list)
-
-
-
-    def collect_manual(self):
-        self.find_collected_pkgs()
-        with open(self.pip_manual_file, "r") as fr:
-            for line in fr:
-                pkg = line.strip().split("\t")
-                if len(pkg) == 1:
-                    pkg_name = pkg[0]
+                try:
+                    pkg_version = pkg[1]
+                except:
                     pkg_version = None
-                else:
-                    pkg_name = pkg[0]
-                    pkg_version = ast.literal_eval(pkg[1])
                 print(self.manager, pkg_name, pkg_version)
                 if pkg_name in self.collected_pkgs:
-                    print("已经采集过该包：{}".format(pkg[1]))
+                    print("已经采集过该包：{}".format(pkg_name))
                     continue
                 if self.manager == "pip":
                     flag = pypi_pkg_links(self.pypi_mirrors, pkg_name, self.dataset_pypi, pkg_version)
@@ -136,18 +100,11 @@ class CollectMain:
                     flag = 0
                     pass
                 if flag:
-                    format_info_list = [self.manager, pkg_name, "", "", pkg_version, "manual"]
+                    format_info_list = [self.manager, pkg_name, "", "", pkg_version, "osv"]
                     write_snyk_pkginfo(self.record_file, format_info_list)
                 else:
                     format_info_list = [self.manager, pkg_name, "", "", pkg_version, "No source code"]
                     write_snyk_pkginfo(self.record_file, format_info_list)
-
-
-
-    def collect_osv(self):
-        pass
-
-
 
 
     def collect_snyk(self):
@@ -184,4 +141,5 @@ class CollectMain:
 
 if __name__ == '__main__':
     collect_main = CollectMain("pip")
-    collect_main.collect_manual()
+    # collect_main.collect_manual()
+    collect_main.collect_snyk()

@@ -35,6 +35,12 @@ def osv_dataset():
                     with open(pkg_malinfo_file, "r") as fr:
                         malinfo = json.load(fr)
                         affected_info = malinfo.get("affected", [])
+                        references_info = malinfo.get("references", [])
+                        for reference_info in references_info:
+                            type = reference_info.get("type", "NA")
+                            url = reference_info.get("url", "NA")
+                            if type != "NA":
+                                print(type + "\t" + url)
                         for affected in affected_info:
                             package_info = affected.get("package", {})
                             package_name = package_info.get("name", "NA")

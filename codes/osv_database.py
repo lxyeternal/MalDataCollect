@@ -10,16 +10,13 @@
 # Description：
 """
 
-import os
-import sys
+import re
 import time
 from selenium import webdriver
-from info_format import format_infodata
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from file_operation import write_stop_file, write_snyk_pkginfo
 
 
 class OSVDatabase:
@@ -42,15 +39,37 @@ class OSVDatabase:
         # TODO: click 10 times
         for i in range(page_index):
             try:
+                wait = WebDriverWait(self.driver, 10)
+                # Wait for the "next page" button to be clickable
+                more_button_selector = ".next-page-button.link-button"
+                more_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, more_button_selector)))
+                # Scroll the button into view and click
+                self.driver.execute_script("arguments[0].scrollIntoView();", more_button)
+                self.driver.execute_script("arguments[0].click();", more_button)
                 self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                wait = WebDriverWait(self.driver, 10)  # 等待时间10秒，根据实际情况调整
-                more_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".next-page-button.link-button")))
-                more_button.click()
-                wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".next-page-button.link-button")))
+                # Wait for the page to load
+                time.sleep(3)
             except Exception as e:
-                print(f"在点击下一页时出现问题：{e}")
+                print(f"Error clicking next page: {e}")
                 break
-        vuln_table_rows = self.driver.find_elements(By.CLASS_NAME, "vuln-table-rows mdc-data-table__content")
+        vuln_table_contents = self.driver.find_element(By.CSS_SELECTOR, ".vuln-table-rows.mdc-data-table__content")
+        vuln_table_rows = vuln_table_contents.find_elements(By.CSS_SELECTOR, ".vuln-table-row.mdc-data-table__row")
+        for vuln_table_row in vuln_table_rows:
+            vuln_id_link = vuln_table_row.find_element(By.CSS_SELECTOR, ".vuln-table-cell.mdc-data-table__cell").find_element(By.CSS_SELECTOR, "a").get_attribute("href")
+            vuln_package_manager = vuln_table_row.find_element(By.CSS_SELECTOR, ".vuln-table-cell.vuln-packages").text
+            # vuln_manager = vuln_package_manager.split("/")[0]
+            # vuln_package_name = "".join(vuln_package_manager.split("/")[1:])
+            vuln_version_row = vuln_table_row.find_element(By.CSS_SELECTOR,".vuln-table-cell.vuln-versions")
+            vuln_versions = vuln_version_row.find_elements(By.CLASS_NAME, "version")
+            malicious_versions = list()
+            for vuln_version in vuln_versions:
+                malicious_versions.append(vuln_version.text)
+            vuln_data = vuln_table_row.find_element(By.TAG_NAME, "relative-time").text
+            malicious_info = vuln_table_row.find_element(By.CSS_SELECTOR, ".vuln-table-cell.vuln-summary").text.strip()
+            if "Malicious code in" in malicious_info:
+                maclicious_package_name = malicious_info.replace("Malicious code in", "").replace("(PyPI)", "").strip()
+                maclicious_manager = "PyPI"
+                print(vuln_id_link, maclicious_package_name, maclicious_manager, malicious_versions, vuln_data)
 
 
 
