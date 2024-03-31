@@ -1567,3 +1567,587 @@ pip,dcrywkqddo,,,0.4.3,manual
 pip,mjpoytwngddh,,,0.3.2,manual
 pip,eeajhjmclakf,,,0.3.2,manual
 pip,pylo-color,,,1.0.3,No source code
+pip,hbcxuypphrnk,https://security.snyk.io/vuln/SNYK-PYTHON-HBCXUYPPHRNK-6483329,,"[0,]",No source code
+pip,lyfamdorksgb,https://security.snyk.io/vuln/SNYK-PYTHON-LYFAMDORKSGB-6483325,,"[0,]",No source code
+pip,schubismomv3,,,['1.0.0'],osv
+pip,schubismomv3,,,['1.1.0'],osv
+pip,schubismomv3,,,['1.2.0'],osv
+pip,schubismomv3,,,['1.3.0'],osv
+pip,schubismomv3,,,['1.4.0'],osv
+pip,schubismomv3,,,['1.5.0'],osv
+pip,schubismomv3,,,['1.6.0'],osv
+pip,schubismomv3,,,['1.7.0'],osv
+pip,schubismomv3,,,['1.8.0'],osv
+pip,schubismomv3,,,['1.9.0'],osv
+pip,schubismomv3,,,['1.10.0'],osv
+pip,insanepackagev1414,,,['1.0.0'],osv
+pip,insanepackageongong192,,,['1.0.0'],osv
+pip,insanepackageongong11192,,,['1.0.0'],osv
+pip,insanepackage217424422342983,,,['1.0.0'],osv
+pip,insanepackage2179824234242342433,,,['1.0.0'],osv
+pip,insanepackage217234234242423442983,,,['1.0.0'],osv
+pip,insanepackage21724342386744243242983,,,['1.0.0'],osv
+pip,requetsts,,,['1.0.0'],osv
+pip,requstss,,,['1.0.0'],osv
+pip,requetsq,,,['1.0.0'],osv
+pip,reqoests,,,['1.0.0'],osv
+pip,reqquest,,,['1.0.0'],osv
+pip,requewsts,,,['1.0.0'],osv
+pip,reqeustz,,,['1.0.0'],osv
+pip,requestr,,,['1.0.0'],osv
+pip,requesks,,,['1.0.0'],osv
+pip,reqeustx,,,['1.0.0'],osv
+pip,reqeosts,,,['1.0.0'],osv
+pip,requesxts,,,['1.0.0'],osv
+pip,requesqs,,,['1.0.0'],osv
+pip,requeksts,,,['1.0.0'],osv
+pip,requesxt,,,['1.0.0'],osv
+pip,requeqsts,,,['1.0.0'],osv
+pip,requesuts,,,['1.0.0'],osv
+pip,requetsa,,,['1.0.0'],osv
+pip,reqjuests,,,['1.0.0'],osv
+pip,requnests,,,['1.0.0'],osv
+pip,reqeist,,,['1.0.0'],osv
+pip,reqzests,,,['1.0.0'],osv
+pip,requyests,,,['1.0.0'],osv
+pip,reqeuste,,,['1.0.0'],osv
+pip,requesxs,,,['1.0.0'],osv
+pip,reqeyst,,,['1.0.0'],osv
+pip,requesrts,,,['1.0.0'],osv
+pip,requxsts,,,['1.0.0'],osv
+pip,requekts,,,['1.0.0'],osv
+pip,requesgt,,,['1.0.0'],osv
+pip,requssts,,,['1.0.0'],osv
+pip,requzsts,,,['1.0.0'],osv
+pip,requksts,,,['1.0.0'],osv
+pip,requas,,,['1.0.0'],osv
+pip,requeits,,,['1.0.0'],osv
+pip,reqsests,,,['1.0.0'],osv
+pip,py-cordd,,,['1.0.0'],osv
+pip,pi-cord,,,['1.0.0'],osv
+pip,py-cod,,,['1.0.0'],osv
+pip,py-vord,,,['1.0.0'],osv
+pip,p-cord,,,['1.0.0'],osv
+pip,py-coed,,,['1.0.0'],osv
+pip,py-cofd,,,['1.0.0'],osv
+pip,py-cotd,,,['1.0.0'],osv
+pip,py-cotrd,,,['1.0.0'],osv
+pip,py-crd,,,['1.0.0'],osv
+pip,py-c0red,,,['1.0.0'],osv
+pip,py-xord,,,['1.0.0'],osv
+pip,py-co4d,,,['1.0.0'],osv
+pip,py-c0ard,,,['1.0.0'],osv
+pip,py-cird,,,['1.0.0'],osv
+pip,py-corddd,,,['1.0.0'],osv
+pip,py-cprd,,,['1.0.0'],osv
+pip,py-c9rd,,,['1.0.0'],osv
+pip,py-c0dd,,,['1.0.0'],osv
+pip,py-corrd,,,['1.0.0'],osv
+pip,py-cortd,,,['1.0.0'],osv
+pip,py-crodd,,,['1.0.0'],osv
+pip,py-cwrd,,,['1.0.0'],osv
+pip,py-cpord,,,['1.0.0'],osv
+pip,py-corxd,,,['1.0.0'],osv
+pip,py-coad,,,['1.0.0'],osv
+pip,py-cxrd,,,['1.0.0'],osv
+pip,py-corde,,,['1.0.0'],osv
+pip,py-corg,,,['1.0.0'],osv
+pip,py-ckrd,,,['1.0.0'],osv
+pip,py-codrd,,,['1.0.0'],osv
+pip,py-cofrd,,,['1.0.0'],osv
+pip,py-corad,,,['1.0.0'],osv
+pip,py-cordq,,,['1.0.0'],osv
+pip,py-corf,,,['1.0.0'],osv
+pip,py-ckord,,,['1.0.0'],osv
+pip,py-czrd,,,['1.0.0'],osv
+pip,py-cozd,,,['1.0.0'],osv
+pip,py-coerd,,,['1.0.0'],osv
+pip,py-c0crd,,,['1.0.0'],osv
+pip,py-cojrd,,,['1.0.0'],osv
+pip,py-cdord,,,['1.0.0'],osv
+pip,py-cordw,,,['1.0.0'],osv
+pip,py-corwd,,,['1.0.0'],osv
+pip,py-coordd,,,['1.0.0'],osv
+pip,py-cobrd,,,['1.0.0'],osv
+pip,py-cocd,,,['1.0.0'],osv
+pip,py-coqrd,,,['1.0.0'],osv
+pip,py-cyrd,,,['1.0.0'],osv
+pip,py-cordf,,,['1.0.0'],osv
+pip,py-cowrd,,,['1.0.0'],osv
+pip,py-cordr,,,['1.0.0'],osv
+pip,py-cordx,,,['1.0.0'],osv
+pip,py-corfd,,,['1.0.0'],osv
+pip,py-corx,,,['1.0.0'],osv
+pip,py-cordv,,,['1.0.0'],osv
+pip,py-corid,,,['1.0.0'],osv
+pip,pycordde,,,['1.0.0'],osv
+pip,pycordwd,,,['1.0.0'],osv
+pip,pycjrd,,,['1.0.0'],osv
+pip,colorm,,,['1.0.0'],osv
+pip,colorame,,,['1.0.0'],osv
+pip,cloroma,,,['1.0.0'],osv
+pip,coloramah,,,['1.0.0'],osv
+pip,colormma,,,['1.0.0'],osv
+pip,colaroma,,,['1.0.0'],osv
+pip,coloramoo,,,['1.0.0'],osv
+pip,coloramo,,,['1.0.0'],osv
+pip,coloramaz,,,['1.0.0'],osv
+pip,coloramia,,,['1.0.0'],osv
+pip,coloramae,,,['1.0.0'],osv
+pip,colorahma,,,['1.0.0'],osv
+pip,coloramu,,,['1.0.0'],osv
+pip,coloroama,,,['1.0.0'],osv
+pip,colorramma,,,['1.0.0'],osv
+pip,corlorama,,,['1.0.0'],osv
+pip,coloramal,,,['1.0.0'],osv
+pip,coloramna,,,['1.0.0'],osv
+pip,coloramza,,,['1.0.0'],osv
+pip,colorhrama,,,['1.0.0'],osv
+pip,clolorama,,,['1.0.0'],osv
+pip,colouorama,,,['1.0.0'],osv
+pip,coloramqa,,,['1.0.0'],osv
+pip,coloramka,,,['1.0.0'],osv
+pip,coloramwa,,,['1.0.0'],osv
+pip,coloramxa,,,['1.0.0'],osv
+pip,coloramqs,,,['1.0.0'],osv
+pip,coloramws,,,['1.0.0'],osv
+pip,coloramxs,,,['1.0.0'],osv
+pip,coloramzs,,,['1.0.0'],osv
+pip,cilorama,,,['1.0.0'],osv
+pip,colprama,,,['1.0.0'],osv
+pip,colorayma,,,['1.0.0'],osv
+pip,colomara,,,['1.0.0'],osv
+pip,capmonsstercloudclient,,,['1.0.0'],osv
+pip,capmonstercloudclinet,,,['1.0.0'],osv
+pip,capmonstercoudclient,,,['1.0.0'],osv
+pip,capmonstercloudcliient,,,['1.0.0'],osv
+pip,capmonstercloudclent,,,['1.0.0'],osv
+pip,capmonstercloudcluodclient,,,['1.0.0'],osv
+pip,capmonstercloudclieent,,,['1.0.0'],osv
+pip,capmostercloudclient,,,['1.0.0'],osv
+pip,capmonstercloudcliant,,,['1.0.0'],osv
+pip,capmonsterclouddlient,,,['1.0.0'],osv
+pip,capmoneercloudclient,,,['1.0.0'],osv
+pip,capmonstercloudcliet,,,['1.0.0'],osv
+pip,capmonstercloudclieet,,,['1.0.0'],osv
+pip,capmonstercloudcliendt,,,['1.0.0'],osv
+pip,capmonsterclouclient,,,['1.0.0'],osv
+pip,capmonstercloudcliend,,,['1.0.0'],osv
+pip,capmonstercloudcliennt,,,['1.0.0'],osv
+pip,capmosterclouclient,,,['1.0.0'],osv
+pip,capmostercloudclienet,,,['1.0.0'],osv
+pip,capmonstercloudclouidclient,,,['1.0.0'],osv
+pip,capmonsterclouudclient,,,['1.0.0'],osv
+pip,capmostercloudclinet,,,['1.0.0'],osv
+pip,capmonstercloudclientt,,,['1.0.0'],osv
+pip,capmonstercludclient,,,['1.0.0'],osv
+pip,capmonstercouldclient,,,['1.0.0'],osv
+pip,capmonstercloudclien,,,['1.0.0'],osv
+pip,capmonsstercloudcliennt,,,['1.0.0'],osv
+pip,capmonsterclouddclient,,,['1.0.0'],osv
+pip,capmonsterrcloudclient,,,['1.0.0'],osv
+pip,capmonstercloudclenit,,,['1.0.0'],osv
+pip,capmonstercloudclienet,,,['1.0.0'],osv
+pip,capmostercloudclieent,,,['1.0.0'],osv
+pip,capmonsterccloudclient,,,['1.0.0'],osv
+pip,capmonsterclouidclient,,,['1.0.0'],osv
+pip,capmonstercloudclinent,,,['1.0.0'],osv
+pip,capmonstercloudclenet,,,['1.0.0'],osv
+pip,oillow,,,['1.0.0'],osv
+pip,pullow,,,['1.0.0'],osv
+pip,pilkow,,,['1.0.0'],osv
+pip,pilloa,,,['1.0.0'],osv
+pip,pilpow,,,['1.0.0'],osv
+pip,pollow,,,['1.0.0'],osv
+pip,pirlow,,,['1.0.0'],osv
+pip,pilliw,,,['1.0.0'],osv
+pip,pillkw,,,['1.0.0'],osv
+pip,pill9w,,,['1.0.0'],osv
+pip,p9llow,,,['1.0.0'],osv
+pip,p8llow,,,['1.0.0'],osv
+pip,pilliow,,,['1.0.0'],osv
+pip,pjllow,,,['1.0.0'],osv
+pip,pilloq,,,['1.0.0'],osv
+pip,pilloo,,,['1.0.0'],osv
+pip,piolow,,,['1.0.0'],osv
+pip,pillo2,,,['1.0.0'],osv
+pip,piplow,,,['1.0.0'],osv
+pip,pillox,,,['1.0.0'],osv
+pip,bip-utilz,,,['1.0.0'],osv
+pip,bipp-utils,,,['1.0.0'],osv
+pip,bip-utiles,,,['1.0.0'],osv
+pip,bup-utils,,,['1.0.0'],osv
+pip,biip-utils,,,['1.0.0'],osv
+pip,bip-util,,,['1.0.0'],osv
+pip,bip-uils,,,['1.0.0'],osv
+pip,bips-utils,,,['1.0.0'],osv
+pip,bip-utlils,,,['1.0.0'],osv
+pip,bip-uitls,,,['1.0.0'],osv
+pip,bip-utilds,,,['1.0.0'],osv
+pip,bip-utisl,,,['1.0.0'],osv
+pip,bpi-utils,,,['1.0.0'],osv
+pip,bupi-utils,,,['1.0.0'],osv
+pip,bip-u8ls,,,['1.0.0'],osv
+pip,bop-utils,,,['1.0.0'],osv
+pip,bip-utilss,,,['1.0.0'],osv
+pip,bip-uttils,,,['1.0.0'],osv
+pip,bip-utile,,,['1.0.0'],osv
+pip,bibp-utils,,,['1.0.0'],osv
+pip,bip-utilos,,,['1.0.0'],osv
+pip,bip-utjls,,,['1.0.0'],osv
+pip,bip-uutils,,,['1.0.0'],osv
+pip,biup-utils,,,['1.0.0'],osv
+pip,johnhammondfanpackage124,,,['1.0.0'],osv
+pip,johnhammondontop183,,,['1.0.0'],osv
+pip,rensoflow,,,['1.0.0'],osv
+pip,tensoflw,,,['1.0.0'],osv
+pip,tensoflpw,,,['1.0.0'],osv
+pip,tensofla,,,['1.0.0'],osv
+pip,trnsorflow,,,['1.0.0'],osv
+pip,tensofliw,,,['1.0.0'],osv
+pip,tensoflqw,,,['1.0.0'],osv
+pip,tensofpow,,,['1.0.0'],osv
+pip,temsorflow,,,['1.0.0'],osv
+pip,tensofl9w,,,['1.0.0'],osv
+pip,tensogflow,,,['1.0.0'],osv
+pip,tensofklow,,,['1.0.0'],osv
+pip,tensoflor,,,['1.0.0'],osv
+pip,tensoflod,,,['1.0.0'],osv
+pip,tensoflxow,,,['1.0.0'],osv
+pip,tensoflouw,,,['1.0.0'],osv
+pip,tensoflom,,,['1.0.0'],osv
+pip,tensofloaw,,,['1.0.0'],osv
+pip,tensourflow,,,['1.0.0'],osv
+pip,tensoflonw,,,['1.0.0'],osv
+pip,tensoflomw,,,['1.0.0'],osv
+pip,tensoflsw,,,['1.0.0'],osv
+pip,tensobflow,,,['1.0.0'],osv
+pip,tensoflolw,,,['1.0.0'],osv
+pip,tensofllow,,,['1.0.0'],osv
+pip,tensnflow,,,['1.0.0'],osv
+pip,tensoflaow,,,['1.0.0'],osv
+pip,tensxoflow,,,['1.0.0'],osv
+pip,tensofleow,,,['1.0.0'],osv
+pip,BeaitifulSoup,,,['1.0.0'],No source code
+pip,BeautiflulSoup,,,['1.0.0'],No source code
+pip,BeautifolSoup,,,['1.0.0'],No source code
+pip,BeautifilSoup,,,['1.0.0'],No source code
+pip,BeautifuoSoup,,,['1.0.0'],No source code
+pip,BeautyfulSoup,,,['1.0.0'],No source code
+pip,BeautifukSoup,,,['1.0.0'],No source code
+pip,BeautifulSoupo,,,['1.0.0'],No source code
+pip,BeutifullSoup,,,['1.0.0'],No source code
+pip,BeautifullSooup,,,['1.0.0'],No source code
+pip,BeautifuklSoup,,,['1.0.0'],No source code
+pip,BeautifulSoul,,,['1.0.0'],No source code
+pip,BeaurifulSoup,,,['1.0.0'],No source code
+pip,BeuatiflSoup,,,['1.0.0'],No source code
+pip,BeutifulSoop,,,['1.0.0'],No source code
+pip,BeautifilSoop,,,['1.0.0'],No source code
+pip,BeautifulSoupe,,,['1.0.0'],No source code
+pip,BeautifoulSoup,,,['1.0.0'],No source code
+pip,BeaitifulSoop,,,['1.0.0'],No source code
+pip,BeautySoup,,,['1.0.0'],No source code
+pip,BeautifullSoop,,,['1.0.0'],No source code
+pip,BeautiflulSoop,,,['1.0.0'],No source code
+pip,BeautilfulSoup,,,['1.0.0'],No source code
+pip,BeaotifulSoup,,,['1.0.0'],No source code
+pip,BeaufifulSoup,,,['1.0.0'],No source code
+pip,PyGamr,,,['1.0.0'],No source code
+pip,PyGane,,,['1.0.0'],No source code
+pip,PyGqme,,,['1.0.0'],No source code
+pip,PyGzme,,,['1.0.0'],No source code
+pip,PyGxme,,,['1.0.0'],No source code
+pip,Pygamm,,,['1.0.0'],No source code
+pip,PzGame,,,['1.0.0'],No source code
+pip,PyGqame,,,['1.0.0'],No source code
+pip,PyGmme,,,['1.0.0'],No source code
+pip,PyGume,,,['1.0.0'],No source code
+pip,PyGamw,,,['1.0.0'],No source code
+pip,PyGfame,,,['1.0.0'],No source code
+pip,PyGazme,,,['1.0.0'],No source code
+pip,PyGhame,,,['1.0.0'],No source code
+pip,PyGaime,,,['1.0.0'],No source code
+pip,PyGarme,,,['1.0.0'],No source code
+pip,PyGaome,,,['1.0.0'],No source code
+pip,PyGaqme,,,['1.0.0'],No source code
+pip,PyGacme,,,['1.0.0'],No source code
+pip,PyGamne,,,['1.0.0'],No source code
+pip,PyGamse,,,['1.0.0'],No source code
+pip,PyGawme,,,['1.0.0'],No source code
+pip,PyGvame,,,['1.0.0'],No source code
+pip,PyGamke,,,['1.0.0'],No source code
+pip,PyGaeme,,,['1.0.0'],No source code
+pip,PyGfme,,,['1.0.0'],No source code
+pip,Sijplejson,,,['1.0.0'],No source code
+pip,Sjimplejson,,,['1.0.0'],No source code
+pip,Simpjson,,,['1.0.0'],No source code
+pip,Siplejason,,,['1.0.0'],No source code
+pip,Simepljson,,,['1.0.0'],No source code
+pip,Simplejason,,,['1.0.0'],No source code
+pip,Sijplejso,,,['1.0.0'],No source code
+pip,Sjmplejson,,,['1.0.0'],No source code
+pip,Simpoejson,,,['1.0.0'],No source code
+pip,Simpejso,,,['1.0.0'],No source code
+pip,Simplejsoj,,,['1.0.0'],No source code
+pip,Simplejdon,,,['1.0.0'],No source code
+pip,Simpkejson,,,['1.0.0'],No source code
+pip,Simplejsoh,,,['1.0.0'],No source code
+pip,Simolejson,,,['1.0.0'],No source code
+pip,Matplptlib,,,['1.0.0'],No source code
+pip,Matplottib,,,['1.0.0'],No source code
+pip,Matplottlab,,,['1.0.0'],No source code
+pip,Maptplotlib,,,['1.0.0'],No source code
+pip,Matplotlob,,,['1.0.0'],No source code
+pip,Matplotlub,,,['1.0.0'],No source code
+pip,Matploltlab,,,['1.0.0'],No source code
+pip,Matplkotlib,,,['1.0.0'],No source code
+pip,Matplotoib,,,['1.0.0'],No source code
+pip,Matplotblib,,,['1.0.0'],No source code
+pip,Matploptlib,,,['1.0.0'],No source code
+pip,Matploltlib,,,['1.0.0'],No source code
+pip,Matpllotib,,,['1.0.0'],No source code
+pip,Matplorlib,,,['1.0.0'],No source code
+pip,Matplotib,,,['1.0.0'],No source code
+pip,Matplolplib,,,['1.0.0'],No source code
+pip,Matplotvlib,,,['1.0.0'],No source code
+pip,Matplotlyib,,,['1.0.0'],No source code
+pip,Matplrtlib,,,['1.0.0'],No source code
+pip,Matplotvib,,,['1.0.0'],No source code
+pip,Matplotlr,,,['1.0.0'],No source code
+pip,Matplottbib,,,['1.0.0'],No source code
+pip,Matplotkib,,,['1.0.0'],No source code
+pip,Matplootib,,,['1.0.0'],No source code
+pip,Matplutlib,,,['1.0.0'],No source code
+pip,Matplftlib,,,['1.0.0'],No source code
+pip,Matpltotlib,,,['1.0.0'],No source code
+pip,Matplotpib,,,['1.0.0'],No source code
+pip,Matpllotb,,,['1.0.0'],No source code
+pip,Matplrtib,,,['1.0.0'],No source code
+pip,Matplotklib,,,['1.0.0'],No source code
+pip,Matplttlib,,,['1.0.0'],No source code
+pip,Matpliotlib,,,['1.0.0'],No source code
+pip,Matplotlpib,,,['1.0.0'],No source code
+pip,Matplotllib,,,['1.0.0'],No source code
+pip,Matplotltib,,,['1.0.0'],No source code
+pip,Matplotlbib,,,['1.0.0'],No source code
+pip,PtTorch,,,['1.0.0'],No source code
+pip,PzTorch,,,['1.0.0'],No source code
+pip,PyTrosh,,,['1.0.0'],No source code
+pip,PyTorcm,,,['1.0.0'],No source code
+pip,PyTorcu,,,['1.0.0'],No source code
+pip,PyTlrc,,,['1.0.0'],No source code
+pip,PyTprch,,,['1.0.0'],No source code
+pip,PyTorcb,,,['1.0.0'],No source code
+pip,PyTirch,,,['1.0.0'],No source code
+pip,PyTorchc,,,['1.0.0'],No source code
+pip,PyTorchy,,,['1.0.0'],No source code
+pip,PyTorchv,,,['1.0.0'],No source code
+pip,PqTorch,,,['1.0.0'],No source code
+pip,PyTroce,,,['1.0.0'],No source code
+pip,PyToich,,,['1.0.0'],No source code
+pip,PyTordh,,,['1.0.0'],No source code
+pip,PyTorchg,,,['1.0.0'],No source code
+pip,PyTorbch,,,['1.0.0'],No source code
+pip,PyTbrch,,,['1.0.0'],No source code
+pip,PyTarch,,,['1.0.0'],No source code
+pip,PyThrch,,,['1.0.0'],No source code
+pip,PyTorchj,,,['1.0.0'],No source code
+pip,PyTorcdh,,,['1.0.0'],No source code
+pip,PyTcrch,,,['1.0.0'],No source code
+pip,PyTorchb,,,['1.0.0'],No source code
+pip,PyTorqh,,,['1.0.0'],No source code
+pip,customtknter,,,['1.0.0'],osv
+pip,custotkinter,,,['1.0.0'],osv
+pip,cuxtomtkinter,,,['1.0.0'],osv
+pip,customekinter,,,['1.0.0'],osv
+pip,customtjinter,,,['1.0.0'],osv
+pip,customtkinber,,,['1.0.0'],osv
+pip,customtkknter,,,['1.0.0'],osv
+pip,customtkingter,,,['1.0.0'],osv
+pip,customtkinger,,,['1.0.0'],osv
+pip,customtkniter,,,['1.0.0'],osv
+pip,customtkitner,,,['1.0.0'],osv
+pip,customtkiter,,,['1.0.0'],osv
+pip,customtkihter,,,['1.0.0'],osv
+pip,customtkinyer,,,['1.0.0'],osv
+pip,customtkibter,,,['1.0.0'],osv
+pip,customtkintet,,,['1.0.0'],osv
+pip,custontkinter,,,['1.0.0'],osv
+pip,customtkintar,,,['1.0.0'],osv
+pip,customtkinteer,,,['1.0.0'],osv
+pip,customtkimter,,,['1.0.0'],osv
+pip,cusgtomtkinter,,,['1.0.0'],osv
+pip,custojtkinter,,,['1.0.0'],osv
+pip,custumtkinter,,,['1.0.0'],osv
+pip,customtkwnter,,,['1.0.0'],osv
+pip,customtknster,,,['1.0.0'],osv
+pip,custojmtkinter,,,['1.0.0'],osv
+pip,customkinter,,,['1.0.0'],osv
+pip,customtkinted,,,['1.0.0'],osv
+pip,custogtkinter,,,['1.0.0'],osv
+pip,customtkintrr,,,['1.0.0'],osv
+pip,custoumtkinter,,,['1.0.0'],osv
+pip,custrmtkinter,,,['1.0.0'],osv
+pip,custoqtkinter,,,['1.0.0'],osv
+pip,customtkintwr,,,['1.0.0'],osv
+pip,custm,,,['1.0.0'],osv
+pip,custvomtkinter,,,['1.0.0'],osv
+pip,customtkinte,,,['1.0.0'],osv
+pip,customtkiyter,,,['1.0.0'],osv
+pip,custotminter,,,['1.0.0'],osv
+pip,customtkinrer,,,['1.0.0'],osv
+pip,custohtkinter,,,['1.0.0'],osv
+pip,customtkintert,,,['1.0.0'],osv
+pip,cuatomtkinter,,,['1.0.0'],osv
+pip,cusromtkinter,,,['1.0.0'],osv
+pip,cuwtomtkinter,,,['1.0.0'],osv
+pip,custpmtkinter,,,['1.0.0'],osv
+pip,customtkjnter,,,['1.0.0'],osv
+pip,custoktkinter,,,['1.0.0'],osv
+pip,customtkfnter,,,['1.0.0'],osv
+pip,customtkznter,,,['1.0.0'],osv
+pip,customtkinet,,,['1.0.0'],osv
+pip,custmtkinter,,,['1.0.0'],osv
+pip,customtinter,,,['1.0.0'],osv
+pip,cutomtkinter,,,['1.0.0'],osv
+pip,custotinter,,,['1.0.0'],osv
+pip,cstmotkinter,,,['1.0.0'],osv
+pip,customtkinetr,,,['1.0.0'],osv
+pip,customtkintre,,,['1.0.0'],osv
+pip,customtkitenr,,,['1.0.0'],osv
+pip,custotkminter,,,['1.0.0'],osv
+pip,customtiknter,,,['1.0.0'],osv
+pip,customtkitnre,,,['1.0.0'],osv
+pip,customtkintrer,,,['1.0.0'],osv
+pip,custmtokinter,,,['1.0.0'],osv
+pip,customtikinter,,,['1.0.0'],osv
+pip,customtkniterr,,,['1.0.0'],osv
+pip,customtkitnerr,,,['1.0.0'],osv
+pip,seleinium,,,['1.0.0'],osv
+pip,sellenim,,,['1.0.0'],osv
+pip,selunium,,,['1.0.0'],osv
+pip,selenyum,,,['1.0.0'],osv
+pip,sellinium,,,['1.0.0'],osv
+pip,selemni,,,['1.0.0'],osv
+pip,selemnium,,,['1.0.0'],osv
+pip,selennim,,,['1.0.0'],osv
+pip,seliniumm,,,['1.0.0'],osv
+pip,selenimn,,,['1.0.0'],osv
+pip,selemnim,,,['1.0.0'],osv
+pip,selennuim,,,['1.0.0'],osv
+pip,seleenim,,,['1.0.0'],osv
+pip,selleium,,,['1.0.0'],osv
+pip,selenuimm,,,['1.0.0'],osv
+pip,seliniumn,,,['1.0.0'],osv
+pip,selleniium,,,['1.0.0'],osv
+pip,selemniumm,,,['1.0.0'],osv
+pip,seleeniumm,,,['1.0.0'],osv
+pip,selleniumm,,,['1.0.0'],osv
+pip,seleunium,,,['1.0.0'],osv
+pip,selenniumm,,,['1.0.0'],osv
+pip,seleiniumm,,,['1.0.0'],osv
+pip,seleiumm,,,['1.0.0'],osv
+pip,selinum,,,['1.0.0'],osv
+pip,selemiumm,,,['1.0.0'],osv
+pip,seleinuim,,,['1.0.0'],osv
+pip,seleenimu,,,['1.0.0'],osv
+pip,playwrgiht,,,['1.0.0'],osv
+pip,playwrihgt,,,['1.0.0'],osv
+pip,plyawright,,,['1.0.0'],osv
+pip,playwrght,,,['1.0.0'],osv
+pip,plaawright,,,['1.0.0'],osv
+pip,playwritgh,,,['1.0.0'],osv
+pip,playwrigth,,,['1.0.0'],osv
+pip,plawyright,,,['1.0.0'],osv
+pip,plauwright,,,['1.0.0'],osv
+pip,playwrigh,,,['1.0.0'],osv
+pip,plywright,,,['1.0.0'],osv
+pip,playwirght,,,['1.0.0'],osv
+pip,playrwight,,,['1.0.0'],osv
+pip,playwrgith,,,['1.0.0'],osv
+pip,plawwright,,,['1.0.0'],osv
+pip,playwrightt,,,['1.0.0'],osv
+pip,playwrigght,,,['1.0.0'],osv
+pip,asyncioo,,,['1.0.0'],osv
+pip,asyyncio,,,['1.0.0'],osv
+pip,asyincio,,,['1.0.0'],osv
+pip,aasyncio,,,['1.0.0'],osv
+pip,asynncio,,,['1.0.0'],osv
+pip,asynciio,,,['1.0.0'],osv
+pip,assyncio,,,['1.0.0'],osv
+pip,aysncio,,,['1.0.0'],osv
+pip,asynci,,,['1.0.0'],osv
+pip,asynccio,,,['1.0.0'],osv
+pip,asyncii,,,['1.0.0'],osv
+pip,asynio,,,['1.0.0'],osv
+pip,asyncioi,,,['1.0.0'],osv
+pip,asyncci,,,['1.0.0'],osv
+pip,asynciooo,,,['1.0.0'],osv
+pip,requiirements,,,['1.0.0'],osv
+pip,reqiurements,,,['1.0.0'],osv
+pip,requiremnets,,,['1.0.0'],osv
+pip,requirments,,,['1.0.0'],osv
+pip,reqiuremnets,,,['1.0.0'],osv
+pip,requierments,,,['1.0.0'],osv
+pip,requiements,,,['1.0.0'],osv
+pip,requirmeents,,,['1.0.0'],osv
+pip,requiurement,,,['1.0.0'],osv
+pip,requriments,,,['1.0.0'],osv
+pip,reqirements,,,['1.0.0'],osv
+pip,requiremnts,,,['1.0.0'],osv
+pip,requiremetns,,,['1.0.0'],osv
+pip,requirementss,,,['1.0.0'],osv
+pip,requierement,,,['1.0.0'],osv
+pip,requriements,,,['1.0.0'],osv
+pip,requirtements,,,['1.0.0'],osv
+pip,requiiremments,,,['1.0.0'],osv
+pip,requiremants,,,['1.0.0'],osv
+pip,reuirements,,,['1.0.0'],osv
+pip,requiiremnts,,,['1.0.0'],osv
+pip,reqiremnts,,,['1.0.0'],osv
+pip,requiirments,,,['1.0.0'],osv
+pip,requiremtns,,,['1.0.0'],osv
+pip,requiremeents,,,['1.0.0'],osv
+pip,requirment,,,['1.0.0'],osv
+pip,requirmentss,,,['1.0.0'],osv
+pip,requiremments,,,['1.0.0'],osv
+pip,reqiremnets,,,['1.0.0'],osv
+pip,requirementxxt,,,['1.0.0'],osv
+pip,requirementstt,,,['1.0.0'],osv
+pip,requirementsttx,,,['1.0.0'],osv
+pip,requirementxstxt,,,['1.0.0'],osv
+pip,requirementstx,,,['1.0.0'],osv
+pip,requiremetstxt,,,['1.0.0'],osv
+pip,requirementstxtt,,,['1.0.0'],osv
+pip,requiremenstxt,,,['1.0.0'],osv
+pip,requirementst,,,['1.0.0'],osv
+pip,requiremntstxt,,,['1.0.0'],osv
+pip,reqiurementstxt,,,['1.0.0'],osv
+pip,requrementstxt,,,['1.0.0'],osv
+pip,requirementstxtx,,,['1.0.0'],osv
+pip,requiurementstxt,,,['1.0.0'],osv
+pip,requiremenstx,,,['1.0.0'],osv
+pip,requirementtsxt,,,['1.0.0'],osv
+pip,requiirementstxt,,,['1.0.0'],osv
+pip,requiirementsxt,,,['1.0.0'],osv
+pip,requiremntstx,,,['1.0.0'],osv
+pip,requiremetstx,,,['1.0.0'],osv
+pip,requirementstxxt,,,['1.0.0'],osv
+pip,requirementstxx,,,['1.0.0'],osv
+pip,requirmentstxt,,,['1.0.0'],osv
+pip,requiremetnstxt,,,['1.0.0'],osv
+pip,requiremnetstxt,,,['1.0.0'],osv
+pip,requiremmentstxt,,,['1.0.0'],osv
+pip,requiirementstx,,,['1.0.0'],osv
+pip,requirrementstxt,,,['1.0.0'],osv
+pip,requiremmentxtxt,,,['1.0.0'],osv
+pip,requirmentstx,,,['1.0.0'],osv
+pip,requirmentstxtt,,,['1.0.0'],osv
+pip,requiremnetxtxt,,,['1.0.0'],osv
+pip,requiremmentxt,,,['1.0.0'],osv
+pip,requiremntxtxt,,,['1.0.0'],osv
+pip,requirementt,,,['1.0.0'],osv
+pip,requirementxt,,,['1.0.0'],osv
+pip,requirementxtt,,,['1.0.0'],osv
+pip,requirementstxtxt,,,['1.0.0'],osv
