@@ -1,0 +1,16 @@
+jzyrljroxlca	[0.3.2]	pypi/xotifol394	21-Jul-23
+wkqubsxekbxn	[0.3.2]	pypi/xotifol394	21-Jul-23
+eoerbisjxqyv	[0.3.2]	pypi/xotifol394	21-Jul-23
+lyfamdorksgb	[0.3.2]	pypi/xotifol394	21-Jul-23
+hnuhfyzumkmo	[0.3.2]	pypi/xotifol394	21-Jul-23
+hbcxuypphrnk	[0.3.2]	pypi/xotifol394	20-Jul-23
+dcrywkqddo	[0.4.3]	pypi/xotifol394	20-Jul-23
+mjpoytwngddh	[0.3.2]	pypi/poyon95014	21-Jul-23
+eeajhjmclakf	[0.3.2]	pypi/tiles77583	21-Jul-23
+yocolor	[0.4.6]	pypi/felpes	05-Mar-24
+coloriv	[3.2]	pypi/felpes	22-Nov-22
+colors-it	[2.1.3]	pypi/felpes	17-Nov-22
+pylo-color	[1.0.3]	pypi/felpes	15-Nov-22
+type-color	[0.4]	felipefelpes	01-Nov-22
+dmp-suite	['11.11.3']
+pyalicet	['0.0.3', '0.0.4']
