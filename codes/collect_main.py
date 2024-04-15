@@ -9,7 +9,8 @@
 # version   : python 3.8
 # Description：
 """
-import ast
+
+
 import os
 import json
 from file_operation import read_stop_file
@@ -18,6 +19,7 @@ from codes.pypi_collect import pypi_pkg_links
 from codes.npm_collect import npm_pkg_links
 from codes.nuget_collect import nuget_pkg_links
 from file_operation import write_snyk_pkginfo
+
 
 
 class CollectMain:
@@ -140,6 +142,6 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("rubygems")
+    collect_main = CollectMain("pip")
     # collect_main.collect_manual()
     collect_main.collect_snyk()

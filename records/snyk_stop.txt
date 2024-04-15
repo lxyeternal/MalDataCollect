@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	iifl_android_app
+npm	analysis-tool-app
 nuget	pathoschild.stardew.mod.buildconfig
-pip	beautifuklsoup
+pip	cutomtkinter
