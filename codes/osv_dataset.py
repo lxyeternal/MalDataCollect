@@ -11,7 +11,9 @@
 """
 
 import os
+import ast
 import json
+from codes.pypi_collect import pypi_pkg_links
 
 
 def extract_json_files(directory):
@@ -21,6 +23,11 @@ def extract_json_files(directory):
             if file.endswith(".json"):
                 json_files.append(os.path.join(root, file))
     return json_files
+
+
+def save_info_txt(package_manager, package_name, version, file_path):
+    with open(file_path, "a") as fw:
+        fw.write(package_manager + "\t" + package_name + "\t" + version + "\n")
 
 
 def osv_dataset():
@@ -49,7 +56,38 @@ def osv_dataset():
                                 print(package_name + "\t" + str(package_version))
                             else:
                                 print(package_name)
+                            save_info_txt(pkg_manager, package_name, str(package_version), "../records/osv_dataset.txt")
+
+def read_txt(file_path):
+    package_names = []
+    with open(file_path, "r") as fr:
+        lines = fr.readlines()
+        for line in lines:
+            package_manager, package_name, version = line.strip().split("\t")
+            package_names.append([package_manager, package_name, version])
+    return package_names
 
 
-osv_dataset()
+def osv_collection():
+    pypi_mirrors = {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"}
+    package_names = read_txt("../records/osv_dataset.txt")
+    collected_pkgs = os.listdir("/Users/blue/Documents/MalDataset/pypi")
+    for index, pkg in enumerate(package_names):
+        print("Processing ", index)
+        package_manager = pkg[0]
+        package_name = pkg[1]
+        versions = pkg[2]
+        if versions == "[]":
+            versions = None
+        else:
+            print(package_name, versions)
+            versions = ast.literal_eval(versions)
+        if package_name in collected_pkgs:
+            continue
+        else:
+            pypi_pkg_links(pypi_mirrors, package_name, "/Users/blue/Documents/MalDataset/osv_pypi", versions)
+
+
+
+osv_collection()
 
