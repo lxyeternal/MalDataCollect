@@ -2,4 +2,4 @@ go	a
 maven	b
 npm	analysis-tool-app
 nuget	pathoschild.stardew.mod.buildconfig
-pip	cutomtkinter
+pip	customtkwnter
