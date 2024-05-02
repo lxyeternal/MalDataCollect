@@ -20,7 +20,7 @@ import shutil
 class DataCheck:
     def __init__(self):
         self.pypi_malregistry = "/Users/blue/Documents/GitHub/pypi_malregistry"
-        self.pkg_original_dir = "/Users/blue/Documents/MalDataset/osv_pypi/"
+        self.pkg_original_dir = "//Users/blue/Documents/MalDataset/zibo/"
         self.pkg_target_dir = "/Users/blue/Documents/MalDataset/unzip_target/"
         self.malsnippet_dir = "./malsnippets/"
         self.versions = set()
@@ -105,29 +105,43 @@ class DataCheck:
         checked_dir = "/Users/blue/Documents/MalDataset/checked_target/"
         packages = os.listdir(self.pkg_original_dir)
         for package in packages:
-            flag = 0  # 初始化flag为0
-            for version in os.listdir(os.path.join(self.pkg_original_dir, package)):
-                if flag:  # 检查flag，如果已经设为1，跳出循环
-                    break
-                for file in os.listdir(os.path.join(self.pkg_original_dir, package, version)):
-                    if flag:  # 再次检查flag，如果已经设为1，跳出循环
+            try:
+                flag = 0  # 初始化flag为0
+                for version in os.listdir(os.path.join(self.pkg_original_dir, package)):
+                    if flag:  # 检查flag，如果已经设为1，跳出循环
                         break
-                    original_path = os.path.join(self.pkg_original_dir, package, version, file)
-                    target_path = os.path.join(self.pkg_target_dir, package)
-                    self.package_decompress(original_path, target_path)
-                    self.package_pyfiles.clear()
-                    self.gci(target_path)
-                    for pyfile in self.package_pyfiles:
-                        if pyfile.endswith('setup.py') or pyfile.endswith('__init__.py'):
+                    for file in os.listdir(os.path.join(self.pkg_original_dir, package, version)):
+                        if flag:  # 再次检查flag，如果已经设为1，跳出循环
+                            break
+                        original_path = os.path.join(self.pkg_original_dir, package, version, file)
+                        target_path = os.path.join(self.pkg_target_dir, package)
+                        self.package_decompress(original_path, target_path)
+                        self.package_pyfiles.clear()
+                        self.gci(target_path)
+                        for pyfile in self.package_pyfiles:
+                            # if pyfile.endswith('setup.py') or pyfile.endswith('__init__.py'):
                             with open(pyfile, "r") as fr:
                                 code = fr.read().strip()
-                                # if pyfile.endswith('setup.py'):
-                                #     code = self.remove_setup(code)
-                        for snippet in self.mal_snippets:
-                            if snippet in code:
-                                shutil.move(os.path.join(self.pkg_original_dir, package), os.path.join(checked_dir, package))
-                                flag = 1  # 设置flag为1
-                                break  # 成功复制后，退出内层循环
+                                    # if pyfile.endswith('setup.py'):
+                                    #     code = self.remove_setup(code)
+                            for snippet in self.mal_snippets:
+                                if snippet in code:
+                                    shutil.move(os.path.join(self.pkg_original_dir, package), os.
+                                                path.join(checked_dir, package))
+                                    flag = 1  # 设置flag为1
+                                    break  # 成功复制后，退出内层循环
+            except Exception as e:
+                continue
+
+    def filter_zibo(self):
+        self.malware_load()
+        self.load_malsnippets()
+        zibo_dir = "/Users/blue/Documents/MalDataset/zibo/"
+        packages = os.listdir(zibo_dir)
+        for package in packages:
+            if package in self.malware_pkgs:
+                shutil.rmtree(os.path.join(zibo_dir, package))  # 使用rmtree删除目录
+
 
 
 if __name__ == '__main__':
