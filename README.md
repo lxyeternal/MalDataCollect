@@ -1,9 +1,13 @@
-
 # PyPI Malicious Package Collection Pipeline Project
 
 ## Project Overview
 
 This project aims to automate the collection of malicious packages from the PyPI platform. It extracts essential information about malicious packages from open-source databases like OSV and Snyk, then uses the package name and version information to download the source code of these malicious packages from mirrors such as Tencent, Huawei, and Tsinghua, and adds them to our database for further analysis and research.
+
+## Pipeline
+
+<img src="MalDataCollect/imgs/pipeline.png" alt="alt text" title="Optional title" width="200" height="100">
+
 
 ## Main Features
 
