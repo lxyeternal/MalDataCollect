@@ -10,7 +10,6 @@
 # Description：
 """
 
-import re
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -31,7 +30,7 @@ class OSVDatabase:
         # options.add_argument('--no-sandbox')
         # options.add_argument('--disable-dev-shm-usage')
         self.driver = webdriver.Chrome(service=service, options=options)
-
+        self.malicious_pkg_info = []
 
     def parse_osv_database(self, page_index):
         self.driver.get(self.osv_baseurl.format(self.pkg_manager))
@@ -69,7 +68,7 @@ class OSVDatabase:
             if "Malicious code in" in malicious_info:
                 maclicious_package_name = malicious_info.replace("Malicious code in", "").replace("(PyPI)", "").strip()
                 maclicious_manager = "PyPI"
-                print(vuln_id_link, maclicious_package_name, maclicious_manager, malicious_versions, vuln_data)
+                self.malicious_pkg_info.append([vuln_id_link, maclicious_package_name, maclicious_manager, malicious_versions, vuln_data])
 
 
 

@@ -1,6 +1,5 @@
 {
-    "osv_link": "",
-    "dataset_pypi": "../../../MalDataset/new/",
+    "dataset_pypi": "../../../MalDataset/pypi/",
     "dataset_npm": "../../../MalDataset/npm/",
     "dataset_go": "../../../MalDataset/go/",
     "dataset_maven": "../../../MalDataset/maven/",
@@ -10,6 +9,7 @@
     "chromedriver": "../utils/chromedriver/macarm/chromedriver",
     "snyk_baseurl": "https://security.snyk.io/",
     "synk_vulurl": "https://security.snyk.io/vuln/",
+    "osv_baseurl": "https://osv.dev/list?ecosystem={}",
     "record_file": "../records/snyk_malicious.csv",
     "pip_manual_file": "../records/pip_manual_packages.txt",
     "npm_manual_file": "../records/npm_manual_packages.txt",

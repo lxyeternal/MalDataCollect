@@ -13,6 +13,7 @@
 
 import os
 import json
+from codes.osv_database import OSVDatabase
 from file_operation import read_stop_file
 from codes.snyk_database import SnykDatabase
 from codes.pypi_collect import pypi_pkg_links
@@ -28,7 +29,7 @@ class CollectMain:
         self.config_path = "../configs/config.json"
         with open(self.config_path, "r") as fr:
             self.config = json.load(fr)
-        self.osv_link = self.config["osv_link"]
+        self.osv_baseurl = self.config["osv_baseurl"]
         self.nuget_mirrors = self.config["nuget_mirrors"]
         self.npm_mirrors = self.config["npm_mirrors"]
         self.go_mirrors = self.config["go_mirrors"]
@@ -116,6 +117,7 @@ class CollectMain:
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
                 if snyk_pkg[1] in self.collected_pkgs:
+                    print("已经采集过该包：{}".format(snyk_pkg[1]))
                     continue
                 #  从镜像网站中下载恶意数据源代码
                 if self.manager == "pip":
@@ -139,9 +141,31 @@ class CollectMain:
                     format_info_list = [self.manager, snyk_pkg[1], snyk_pkg[0], "", snyk_pkg[2], "No source code"]
                     write_snyk_pkginfo(self.record_file, format_info_list)
 
+    def collect_osv(self):
+        self.find_collected_pkgs()
+        osvdatabase = OSVDatabase(self.chromedriver, self.osv_baseurl, "PyPI")
+        osvdatabase.parse_osv_database(20)
+        for pkg_info in osvdatabase.malicious_pkg_info:
+            package_name = pkg_info[1]
+            package_version = pkg_info[3]
+            if package_name in self.collected_pkgs:
+                print("已经采集过该包：{}".format(package_name))
+                continue
+            if self.manager == "pip":
+                flag = pypi_pkg_links(self.pypi_mirrors, package_name, self.dataset_pypi, package_version)
+            else:
+                flag = 0
+            if flag:
+                format_info_list = [self.manager, package_name, "", "", package_version, "osv"]
+                write_snyk_pkginfo(self.record_file, format_info_list)
+            else:
+                format_info_list = [self.manager, package_name, "", "", package_version, "No source code"]
+                write_snyk_pkginfo(self.record_file, format_info_list)
+
 
 
 if __name__ == '__main__':
     collect_main = CollectMain("pip")
     # collect_main.collect_manual()
-    collect_main.collect_snyk()
+    # collect_main.collect_snyk()
+    collect_main.collect_osv()
