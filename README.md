@@ -6,7 +6,7 @@ This project aims to automate the collection of malicious packages from the PyPI
 
 ## Pipeline
 
-<img src="MalDataCollect/imgs/pipeline.png" alt="alt text" title="Optional title" width="200" height="100">
+<img src="imgs/pipeline.png" alt="alt text" title="Optional title" width="200" height="100">
 
 
 ## Main Features
