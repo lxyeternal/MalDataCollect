@@ -66,15 +66,16 @@ class OSVDatabase:
             vuln_data = vuln_table_row.find_element(By.TAG_NAME, "relative-time").text
             malicious_info = vuln_table_row.find_element(By.CSS_SELECTOR, ".vuln-table-cell.vuln-summary").text.strip()
             if "Malicious code in" in malicious_info:
-                maclicious_package_name = malicious_info.replace("Malicious code in", "").replace("(PyPI)", "").strip()
-                maclicious_manager = "PyPI"
-                self.malicious_pkg_info.append([vuln_id_link, maclicious_package_name, maclicious_manager, malicious_versions, vuln_data])
+                malicious_package_name = malicious_info.replace("Malicious code in", "").replace("(PyPI)", "").strip()
+                malicious_manager = "PyPI"
+                print(malicious_package_name, malicious_versions)
+                self.malicious_pkg_info.append([vuln_id_link, malicious_package_name, malicious_manager, malicious_versions, vuln_data])
 
 
 
-if __name__ == '__main__':
-    osv_baseurl = "https://osv.dev/list?ecosystem={}"
-    chromedriver = "/Users/blue/Documents/GitHub/MalDataCollect/utils/chromedriver/macarm/chromedriver"
-    pkg_manager = "PyPI"
-    osvdatabase = OSVDatabase(chromedriver, osv_baseurl, pkg_manager)
-    osvdatabase.parse_osv_database(10)
+# if __name__ == '__main__':
+#     osv_baseurl = "https://osv.dev/list?ecosystem={}"
+#     chromedriver = "/Users/blue/Documents/GitHub/MalDataCollect/utils/chromedriver/macarm/chromedriver"
+#     pkg_manager = "PyPI"
+#     osvdatabase = OSVDatabase(chromedriver, osv_baseurl, pkg_manager)
+#     osvdatabase.parse_osv_database(10)

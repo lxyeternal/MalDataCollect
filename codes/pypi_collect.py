@@ -53,6 +53,8 @@ def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi, input_version=None) -> i
                     if input_version:
                         if extracted_version in input_version:
                             source_code_filename = os.path.join(dataset_pypi, pkgname, extracted_version, link_filename)
+                            if source_code_filename.endswith(".whl"):
+                                source_code_filename = source_code_filename.replace(".whl", ".tar.gz")
                             file_response = requests.get(download_link)
                             if file_response.status_code == 200:
                                 print("Download from ", mirror)
@@ -64,6 +66,8 @@ def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi, input_version=None) -> i
                                     flag = 1
                     else:
                         source_code_filename = os.path.join(dataset_pypi, pkgname, extracted_version, link_filename)
+                        if source_code_filename.endswith(".whl"):
+                            source_code_filename = source_code_filename.replace(".whl", ".tar.gz")
                         file_response = requests.get(download_link)
                         if file_response.status_code == 200:
                             print("Download from ", mirror)

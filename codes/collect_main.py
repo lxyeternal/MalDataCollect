@@ -144,7 +144,7 @@ class CollectMain:
     def collect_osv(self):
         self.find_collected_pkgs()
         osvdatabase = OSVDatabase(self.chromedriver, self.osv_baseurl, "PyPI")
-        osvdatabase.parse_osv_database(20)
+        osvdatabase.parse_osv_database(100)
         for pkg_info in osvdatabase.malicious_pkg_info:
             package_name = pkg_info[1]
             package_version = pkg_info[3]
@@ -165,7 +165,7 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("npm")
+    collect_main = CollectMain("pip")
     # collect_main.collect_manual()
-    collect_main.collect_snyk()
-    # collect_main.collect_osv()
+    # collect_main.collect_snyk()
+    collect_main.collect_osv()
