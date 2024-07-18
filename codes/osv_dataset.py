@@ -13,6 +13,7 @@
 import os
 import ast
 import json
+from pymongo import MongoClient
 from codes.pypi_collect import pypi_pkg_links
 
 
@@ -88,6 +89,45 @@ def osv_collection():
             pypi_pkg_links(pypi_mirrors, package_name, "/Users/blue/Documents/MalDataset/osv_pypi", versions)
 
 
+def query_mongodb(requested_name):
+    # 连接到MongoDB
+    client = MongoClient('mongodb://localhost:27017/')  # 替换为你的MongoDB连接字符串
+    # 选择数据库和集合
+    db = client['pypi']  # 替换为你的数据库名
+    collection = db['pypimetadata']  # 替换为你的集合名
+    # 尝试原始名称和替换 "-" 为 "_" 的名称
+    names_to_try = [requested_name, requested_name.replace('-', '_')]
+    results = []
+    for name in names_to_try:
+        # 构建查询
+        query = {"requested_name": name}
+        # 执行查询
+        results = list(collection.find(query))
+        if results:
+            break  # 如果找到结果，就退出循环
+    if not results:
+        # print(f"No results found for package: {requested_name}")
+        pass
+    else:
+        for document in results:
+            if 'releases' in document:
+                releases = document['releases']
+                for version, release_info in releases.items():
+                    if release_info and isinstance(release_info, list) and len(release_info) > 0:
+                        url = release_info[0].get('url')
+                        if url:
+                            print(f"Package: {requested_name}, Version: {version}, URL: {url}")
 
-osv_collection()
+
+def data_existed():
+    dataset_dir = "/Users/blue/Documents/GitHub/pypi_malregistry"
+    exist_packages = os.listdir(dataset_dir)
+    package_names = read_txt("../records/osv_dataset.txt")
+    for pkg in package_names:
+        package_name = pkg[1]
+        if package_name not in exist_packages:
+            query_mongodb(package_name)
+
+
+data_existed()
 
