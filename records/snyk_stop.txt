@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	analysis-tool-app
+npm	bouncifyrn
 nuget	pathoschild.stardew.mod.buildconfig
 pip	customtkwnter
