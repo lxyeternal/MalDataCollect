@@ -123,7 +123,10 @@ class CollectMain:
                 if self.manager == "pip":
                     flag = pypi_pkg_links(self.pypi_mirrors, snyk_pkg[1], self.dataset_pypi)
                 elif self.manager == "npm":
-                    flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_npm)
+                    try:
+                        flag = npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.dataset_npm)
+                    except:
+                        flag = 0
                 elif self.manager == "nuget":
                     flag = nuget_pkg_links(self.nuget_mirrors, snyk_pkg[1], self.dataset_nuget)
                 elif self.manager == "golang":

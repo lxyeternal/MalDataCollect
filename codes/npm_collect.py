@@ -34,6 +34,7 @@ def npm_pkg_links(npm_mirrors, pkgname, dataset_npm) -> int:
                     f.write(file_response.content)
                     f.flush()
                     flag = 1
+                    print(f"Downloaded {pkgname} {version} from {mirror} {os.path.join(url, pkgname)}")
         if flag:
             break
     return flag
