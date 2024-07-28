@@ -112,7 +112,7 @@ class CollectMain:
 
     def collect_snyk(self):
         self.find_collected_pkgs()
-        for snyk_index in range(1, 10):
+        for snyk_index in range(1, 30):
             print("正在采集第 {} 页数据".format(snyk_index))
             snyk_pkgs = self.snykdatabase.parse_snyk_database(self.manager, str(snyk_index))
             for snyk_pkg in snyk_pkgs:
@@ -165,7 +165,7 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("pip")
+    collect_main = CollectMain("npm")
     # collect_main.collect_manual()
-    # collect_main.collect_snyk()
-    collect_main.collect_osv()
+    collect_main.collect_snyk()
+    # collect_main.collect_osv()

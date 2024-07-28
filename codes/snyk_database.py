@@ -75,27 +75,6 @@ class SnykDatabase:
         self.infodriver.get(pkg_complete_url)
         self.driver.implicitly_wait(10)
         vuln_page_body_wrapper = self.infodriver.find_element(By.CLASS_NAME, "vuln-page__body-wrapper")
-        pkg_score = vuln_page_body_wrapper.find_element(By.CLASS_NAME, "severity-widget__score").get_attribute("data-snyk-test-score")
-        right_div = vuln_page_body_wrapper.find_elements(By.CLASS_NAME, "vue--card__body")
-        #  点击按钮，查看更多
-        right_div[0].find_element(By.CLASS_NAME, "see-all").click()
-        self.driver.implicitly_wait(2)
-        pkg_info_dict = dict()
-        for box in right_div:
-            div_uls = box.find_elements(By.TAG_NAME, "ul")
-            for div_ul in div_uls:
-                ul_lis = div_ul.find_elements(By.TAG_NAME, "li")
-                details_items = div_ul.find_elements(By.CLASS_NAME, "cvss-details-item")
-                for ul_li in ul_lis:
-                    item_name = ul_li.find_element(By.TAG_NAME, "span").text
-                    item_level = ul_li.find_element(By.TAG_NAME, "strong").text
-                    pkg_info_dict[item_name] = item_level
-                for details_item in details_items:
-                    span_item = details_item.find_elements(By.TAG_NAME, "span")
-                    item_name = span_item[0].text
-                    item_level = span_item[1].text
-                    pkg_info_dict[item_name] = item_level
-        print(pkg_info_dict)
         #  update code to adapt the website new UI elements
         left_div = vuln_page_body_wrapper.find_element(By.CLASS_NAME, "left")
         vuln_info_block = left_div.find_element(By.CLASS_NAME, "vuln-info-block")
@@ -107,7 +86,21 @@ class SnykDatabase:
         vuln_fix_content = left_div.find_elements(By.CLASS_NAME, "markdown-section")
         fix_method = vuln_fix_content[0].find_element(By.CLASS_NAME, "vue--prose").text
         overview = vuln_fix_content[1].find_element(By.CLASS_NAME, "vue--prose").text
+        relink_block = left_div.find_elements(By.CSS_SELECTOR, ".vue--heading.heading")[2]
+        li_tags = relink_block.find_elements(By.TAG_NAME, "li")
+        ref_links = []
+        for li_tag in li_tags:
+            ref_links.append(li_tag.find_element(By.TAG_NAME, "a").get_attribute("href"))
+        # CVSS
+        cvss_block = left_div.find_element(By.CLASS_NAME, "vue--block-expandable__content")
+        vendorcvss__container = cvss_block.find_element(By.CLASS_NAME, "vendorcvss__container")
+        vendorcvss__list_item = vendorcvss__container.find_elements(By.CLASS_NAME, "vendorcvss__list_item")
+        cvss_info = {}
+        for cvss_item in vendorcvss__list_item:
+            cvss_item_name = cvss_item.find_element(By.CLASS_NAME, "cvss-details-item__label_tooltip").text
+            cvss_item_value = cvss_item.find_element(By.CLASS_NAME, "cvss-details-item__value").text
+            cvss_info[cvss_item_name] = cvss_item_value
         #  格式化数据，对应起来
-        format_info_list = format_infodata(pkg_info_dict)
-        format_info_list = [manager, pkgname, pkg_complete_url, pkg_score, pkgversion, manager, cve_number, cwe_number, fix_method, overview, update_date, pkg_type] + format_info_list
+        # format_info_list = format_infodata(pkg_info_dict)
+        format_info_list = [manager, pkgname, pkg_complete_url, "00", pkgversion, manager, cve_number, cwe_number, fix_method, overview, update_date, pkg_type]
         write_snyk_pkginfo(self.record_file, format_info_list)

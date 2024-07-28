@@ -1,5 +1,5 @@
 {
-    "dataset_pypi": "../../../MalDataset/pypi/",
+    "dataset_pypi": "../../../MalDataset/test/",
     "dataset_npm": "../../../MalDataset/npm/",
     "dataset_go": "../../../MalDataset/go/",
     "dataset_maven": "../../../MalDataset/maven/",
