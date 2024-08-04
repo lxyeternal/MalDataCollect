@@ -5036,3 +5036,286 @@ npm,discourse-markdown-it,https://security.snyk.io/vuln/SNYK-JS-DISCOURSEMARKDOW
 npm,deprecation-silencer,https://security.snyk.io/vuln/SNYK-JS-DEPRECATIONSILENCER-6613222,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the deprecation-silencer package.,"deprecation-silencer is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 15 APR 2024,MALICIOUS
 npm,trip-component-platform-online-prepermission-popup,https://security.snyk.io/vuln/SNYK-JS-TRIPCOMPONENTPLATFORMONLINEPREPERMISSIONPOPUP-6613215,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the trip-component-platform-online-prepermission-popup package.,"trip-component-platform-online-prepermission-popup is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 15 APR 2024,MALICIOUS
 npm,wt-fe-buz-utilities-collection,https://security.snyk.io/vuln/SNYK-JS-WTFEBUZUTILITIESCOLLECTION-6613211,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the wt-fe-buz-utilities-collection package.,"wt-fe-buz-utilities-collection is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 15 APR 2024,MALICIOUS
+pip,zuppa,,,,osv
+pip,zuppa,,,,osv
+pip,zuppa,,,,osv
+pip,yarn,,,,No source code
+pip,woof,,,,osv
+pip,wen3,,,,No source code
+pip,zuppa,,,,osv
+pip,yarn,,,,No source code
+pip,woof,,,,osv
+pip,wen3,,,,osv
+pip,websocket-client,,,,No source code
+pip,vyper,,,,No source code
+pip,vxrail-ansible-utility,,,,osv
+pip,vmlib,,,,osv
+pip,vapi-client-bindings,,,,osv
+pip,urtelib32,,,,osv
+pip,urllib3,,,,No source code
+pip,updat-httpx,,,,osv
+pip,uatraits,,,,osv
+pip,torch,,,,No source code
+pip,tkcalendar,,,,No source code
+pip,test-test-test123,,,,osv
+pip,test,,,,osv
+pip,tensorflow,,,,No source code
+pip,teddy,,,,osv
+pip,tbb,,,,No source code
+pip,taxi-etl,,,,osv
+pip,startuptools,,,,osv
+pip,st,,,,osv
+pip,ssc-concurrent-log-handler,,,,osv
+pip,ss-concurrent-log-handler,,,,osv
+pip,sqlserver,,,,No source code
+pip,sqliter,,,,osv
+pip,splib-http,,,,osv
+pip,spam,,,,No source code
+pip,somsomsom,,,,osv
+pip,solana,,,,No source code
+pip,smallmatter,,,,osv
+pip,sjmplejson,,,,osv
+pip,sjimplejson,,,,osv
+pip,siplejason,,,,osv
+pip,simpoejson,,,,osv
+pip,simplejson,,,,No source code
+pip,simplejsoj,,,,osv
+pip,simplejsoh,,,,osv
+pip,simplejdon,,,,osv
+pip,simplejason,,,,osv
+pip,simpkejson,,,,osv
+pip,simolejson,,,,osv
+pip,simepljson,,,,osv
+pip,sijplejson,,,,osv
+pip,shutterstock-cli,,,,No source code
+pip,shubh,,,,osv
+pip,shortnet,,,,No source code
+pip,shippingtools,,,,No source code
+pip,shaka-streamer,,,,osv
+pip,service-etl,,,,osv
+pip,selenium,,,,No source code
+pip,segmm,,,,No source code
+pip,sea-django-mysqlpool,,,,osv
+pip,scrapy,,,,No source code
+pip,scikit-learn,,,,No source code
+pip,sageshutdown,,,,No source code
+pip,sagemakertransformers,,,,No source code
+pip,roblox-wrapper,,,,No source code
+pip,rest-client,,,,osv
+pip,reqwests,,,,osv
+pip,requests-toolbelt,,,,No source code
+pip,requests,,,,No source code
+pip,request3,,,,osv
+pip,request.request,,,,No source code
+pip,request-plus,,,,osv
+pip,reqeusts,,,,No source code
+pip,rc,,,,No source code
+pip,pztorch,,,,osv
+pip,pyyaml,,,,No source code
+pip,pywarder,,,,osv
+pip,pytrosh,,,,osv
+pip,pytordh,,,,osv
+pip,pytorchy,,,,osv
+pip,pytorchg,,,,osv
+pip,pytorchc,,,,osv
+pip,pytorchb,,,,osv
+pip,pytorch-triton,,,,osv
+pip,pytorch,,,,osv
+pip,pytorcdh,,,,osv
+pip,pytorcb,,,,osv
+pip,pytorbch,,,,osv
+pip,pytoich,,,,osv
+pip,pytirch,,,,osv
+pip,pythrch,,,,osv
+pip,pythondateutil,,,,No source code
+pip,pythoncolourmodulev2,,,,No source code
+pip,python-splib,,,,osv
+pip,python-binance,,,,No source code
+pip,pytarch,,,,osv
+pip,pystyle,,,,No source code
+pip,pysocks,,,,No source code
+pip,pyselfdiscord,,,,No source code
+pip,pykooler,,,,osv
+pip,pyinstaller,,,,No source code
+pip,pygzme,,,,osv
+pip,pygxme,,,,osv
+pip,pygvame,,,,osv
+pip,pygume,,,,osv
+pip,pygraphql32,,,,osv
+pip,pygqame,,,,osv
+pip,pygmme,,,,osv
+pip,pygfme,,,,osv
+pip,pygazme,,,,osv
+pip,pygawme,,,,osv
+pip,pygarme,,,,osv
+pip,pygaqme,,,,osv
+pip,pygaome,,,,osv
+pip,pygane,,,,osv
+pip,pygamw,,,,osv
+pip,pygamse,,,,osv
+pip,pygamr,,,,osv
+pip,pygamne,,,,osv
+pip,pygamm,,,,osv
+pip,pygame,,,,No source code
+pip,pygaeme,,,,osv
+pip,pygacme,,,,osv
+pip,pycurl,,,,No source code
+pip,pycoloringextensionv1,,,,osv
+pip,pycodestyle,,,,No source code
+pip,pyanxdns,,,,osv
+pip,py-terminal-banner,,,,osv
+pip,py-cord,,,,No source code
+pip,purposefully-malicious,,,,osv
+pip,psutil,,,,No source code
+pip,prompt-toolkit,,,,No source code
+pip,prometheus-http-client-shopee,,,,osv
+pip,progressbar2,,,,No source code
+pip,pqtorch,,,,osv
+pip,pnpm,,,,No source code
+pip,playwright,,,,No source code
+pip,piptool,,,,osv
+pip,pip,,,,No source code
+pip,pillow,,,,No source code
+pip,pandas,,,,No source code
+pip,osds,,,,osv
+pip,os-vif,,,,No source code
+pip,openpyxl,,,,No source code
+pip,np6helperhttptest,,,,osv
+pip,np6helperhttper,,,,osv
+pip,nir-bb-test,,,,osv
+pip,mum,,,,osv
+pip,ms,,,,osv
+pip,mpath,,,,osv
+pip,mozilla,,,,osv
+pip,modularseven,,,,osv
+pip,microsoft,,,,osv
+pip,matplttlib,,,,osv
+pip,matpltotlib,,,,osv
+pip,matplrtlib,,,,osv
+pip,matplotvlib,,,,osv
+pip,matplotvib,,,,osv
+pip,matplottlab,,,,osv
+pip,matplottib,,,,osv
+pip,matplottbib,,,,osv
+pip,matplotoib,,,,osv
+pip,matplotlr,,,,osv
+pip,matplotlpib,,,,osv
+pip,matplotlob,,,,osv
+pip,matplotllib,,,,osv
+pip,matplotlib,,,,No source code
+pip,matplotklib,,,,osv
+pip,matplotkib,,,,osv
+pip,matplotib,,,,osv
+pip,matplotblib,,,,osv
+pip,matplorlib,,,,osv
+pip,matplootib,,,,osv
+pip,matploltlib,,,,osv
+pip,matploltlab,,,,osv
+pip,matplolplib,,,,osv
+pip,matpllotib,,,,osv
+pip,matplkotlib,,,,osv
+pip,matpliotlib,,,,osv
+pip,matplftlib,,,,osv
+pip,marked,,,,osv
+pip,mariadb,,,,No source code
+pip,maptplotlib,,,,osv
+pip,mailparser,,,,No source code
+pip,lyft-dataset-sdk,,,,No source code
+pip,lodash,,,,osv
+pip,locute,,,,osv
+pip,localization-utils,,,,osv
+pip,libwebp,,,,osv
+pip,libtpu-nightly,,,,No source code
+pip,libdeflate,,,,osv
+pip,left-pad,,,,osv
+pip,kokokoako,,,,osv
+pip,keep,,,,No source code
+pip,kazoo-shopee,,,,osv
+pip,judyb,,,,osv
+pip,jinja2,,,,No source code
+pip,idna,,,,No source code
+pip,idms,,,,No source code
+pip,hypixelmcapi,,,,No source code
+pip,hypixelmc,,,,osv
+pip,hymcapi,,,,osv
+pip,huehuehuehue,,,,osv
+pip,hippocrates,,,,No source code
+pip,geodesic,,,,osv
+pip,funcaptcha,,,,No source code
+pip,freqtrade,,,,No source code
+pip,fnbot2,,,,osv
+pip,final-amwsis-test,,,,osv
+pip,exotel,,,,osv
+pip,example-package-taxi-etl,,,,osv
+pip,event-stream,,,,No source code
+pip,ethereum2,,,,osv
+pip,envlogger,,,,No source code
+pip,dukaan-requests,,,,osv
+pip,driftme,,,,osv
+pip,download-youtube-subtitle,,,,No source code
+pip,docutils,,,,No source code
+pip,dmp-suite,,,,osv
+pip,djangorestframework-api-key,,,,No source code
+pip,django-log-tracker,,,,osv
+pip,django,,,,No source code
+pip,discordwebconfig,,,,osv
+pip,discord.js,,,,osv
+pip,discord-webhook,,,,No source code
+pip,discord-color,,,,No source code
+pip,discord,,,,No source code
+pip,dgsinstaller,,,,osv
+pip,customtkinter,,,,No source code
+pip,cryptofeed,,,,No source code
+pip,cryptocompare,,,,No source code
+pip,crowdstrike-falconpy-dev,,,,No source code
+pip,crossenv,,,,No source code
+pip,crealtest,,,,osv
+pip,colorsss,,,,osv
+pip,colorama,,,,No source code
+pip,color-vividpy,,,,osv
+pip,code-tester,,,,osv
+pip,coa,,,,osv
+pip,cloud-client,,,,osv
+pip,click,,,,No source code
+pip,chainflow,,,,osv
+pip,ccxt,,,,No source code
+pip,ccsinstaller,,,,osv
+pip,catme,,,,osv
+pip,capmonstercloudclient,,,,No source code
+pip,ca-certificates,,,,osv
+pip,bs4,,,,osv
+pip,broke-rcl,,,,osv
+pip,boto3,,,,No source code
+pip,bleurt,,,,No source code
+pip,bitcoinlib,,,,No source code
+pip,bip-utils,,,,No source code
+pip,beutifulsoop,,,,osv
+pip,beutifullsoup,,,,osv
+pip,beuatiflsoup,,,,osv
+pip,beautysoup,,,,osv
+pip,beautyfulsoup,,,,osv
+pip,beautifulsoupo,,,,osv
+pip,beautifulsoup4,,,,No source code
+pip,beautifulsoup,,,,osv
+pip,beautifulsoul,,,,osv
+pip,beautifulsoop,,,,osv
+pip,beautifullsooup,,,,osv
+pip,beautifullsoop,,,,osv
+pip,beautifoulsoup,,,,osv
+pip,beautifolsoup,,,,osv
+pip,beautifilsoup,,,,osv
+pip,beautifilsoop,,,,osv
+pip,beaufifulsoup,,,,osv
+pip,beaotifulsoup,,,,osv
+pip,beaitifulsoop,,,,osv
+pip,azureml-contrib-jupyterrun,,,,osv
+pip,azureml-contrib-daskonbatch,,,,osv
+pip,azureazure,,,,osv
+pip,axios,,,,osv
+pip,asyncio,,,,No source code
+pip,ascii2art,,,,osv
+pip,are,,,,No source code
+pip,api-res-py,,,,osv
+pip,aiohttp-proxy-connect,,,,osv
+pip,aiohttp,,,,No source code
+pip,adlib,,,,No source code
