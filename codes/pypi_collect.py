@@ -29,6 +29,8 @@ def pypi_pkg_links(pypi_mirrors, pkgname, dataset_pypi, input_version=None) -> i
         if rq.status_code == 200:
             #  为包创建文件夹
             soup = BeautifulSoup(rq.content, 'html.parser')  # 文档对象
+            if len(soup.find_all('a')) > 10:
+                break
             # 查找文档中所有a标签
             for a in soup.find_all('a'):
                 # 查找href标签
