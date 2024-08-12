@@ -13,6 +13,7 @@
 import csv
 import os
 import requests
+from collections import defaultdict
 from urllib.parse import urlparse
 
 
@@ -60,5 +61,28 @@ def process_csv_and_download(csv_file_path):
             print(f"Failed to download: {full_link}")
 
 
+def generate_package_summary(root_dir):
+    packages = defaultdict(set)
+
+    # 遍历文件夹结构
+    for name in os.listdir(root_dir):
+        name_path = os.path.join(root_dir, name)
+        if os.path.isdir(name_path):
+            for version in os.listdir(name_path):
+                version_path = os.path.join(name_path, version)
+                if os.path.isdir(version_path):
+                    packages[name].add(version)
+
+    # 生成摘要
+    summary = []
+    for name, versions in packages.items():
+        versions_str = ', '.join(sorted(versions))
+        summary.append(f"{name} [{versions_str}] <br>")
+
+    return '\n'.join(summary)
+
+
 # 使用函数
-process_csv_and_download('/Users/blue/Downloads/bquxjob_1bca46b1_1914472a44e.csv')
+# process_csv_and_download('/Users/blue/Downloads/bquxjob_1bca46b1_1914472a44e.csv')
+result = generate_package_summary("/Users/blue/Downloads/data")
+print(result)
