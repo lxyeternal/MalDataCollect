@@ -57,7 +57,7 @@ class CollectMain:
 
     def find_collected_pkgs(self):
         if self.manager == "pip":
-            self.collected_pkgs = os.listdir(self.dataset_pypi)
+            self.collected_pkgs = os.listdir("/Users/blue/Documents/GitHub/pypi_malregistry")
         elif self.manager == "npm":
             self.collected_pkgs = os.listdir(self.dataset_npm)
             self.collected_pkgs = [pkg.replace("##", "/") for pkg in self.collected_pkgs]
@@ -168,7 +168,7 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("npm")
-    # collect_main.collect_manual()
-    collect_main.collect_snyk()
+    collect_main = CollectMain("pip")
+    collect_main.collect_manual()
+    # collect_main.collect_snyk()
     # collect_main.collect_osv()

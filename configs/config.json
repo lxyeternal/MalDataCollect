@@ -11,7 +11,7 @@
     "synk_vulurl": "https://security.snyk.io/vuln/",
     "osv_baseurl": "https://osv.dev/list?ecosystem={}",
     "record_file": "../records/snyk_malicious.csv",
-    "pip_manual_file": "../records/pip_manual_packages.txt",
+    "pip_manual_file": "../records/pip-scc.txt",
     "npm_manual_file": "../records/npm_manual_packages.txt",
     "rubygems_manual_file": "../records/rubygems_manual_packages.txt",
     "stop_file": "../records/snyk_stop.txt",

