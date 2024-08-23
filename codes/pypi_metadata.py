@@ -33,7 +33,7 @@ def package_download(dataset_pypi, pkgname, extracted_version, source_code_filen
 
 
 def process_json_and_download(file_path, dataset_pypi):
-    downloaded_packages = os.listdir("/Users/blue/Documents/GitHub/pypi_malregistry")
+    downloaded_packages = os.listdir("/Users/blue/Documents/MalDataset/npm")
     # Dictionary to hold the latest version and path for each package
     packages_dict = {}
     # Read and process the JSON file

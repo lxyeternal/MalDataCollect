@@ -19,6 +19,7 @@ from file_operation import mkdir
 def npm_pkg_links(npm_mirrors, pkgname, dataset_npm) -> int:
     flag = 0
     for mirror, url in npm_mirrors.items():
+        print(os.path.join(url, pkgname))
         response = requests.get(os.path.join(url, pkgname))
         if response.status_code == 200:
             data = response.json()

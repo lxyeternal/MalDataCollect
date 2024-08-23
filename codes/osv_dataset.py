@@ -32,10 +32,10 @@ def save_info_txt(package_manager, package_name, version, file_path):
 
 
 def osv_dataset():
-    dataset_dir = "../osv"
+    dataset_dir = "/Users/blue/Downloads/OSV"
     pkg_managers = os.listdir(dataset_dir)
     for pkg_manager in pkg_managers:
-        if pkg_manager == "pypi":
+        if pkg_manager == "npm":
             pkg_names = os.listdir(os.path.join(dataset_dir, pkg_manager))
             for pkg_name in pkg_names:
                 json_files = extract_json_files(os.path.join(dataset_dir, pkg_manager, pkg_name))
@@ -57,7 +57,7 @@ def osv_dataset():
                                 print(package_name + "\t" + str(package_version))
                             else:
                                 print(package_name)
-                            save_info_txt(pkg_manager, package_name, str(package_version), "../records/osv_dataset.txt")
+                            save_info_txt(pkg_manager, package_name, str(package_version), "../records/osv_npm_dataset.txt")
 
 def read_txt(file_path):
     package_names = []
@@ -129,5 +129,5 @@ def data_existed():
             query_mongodb(package_name)
 
 
-data_existed()
+osv_dataset()
 
