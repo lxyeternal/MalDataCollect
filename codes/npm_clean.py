@@ -25,12 +25,12 @@ def clean_package_folders(base_folder):
             versions = [v for v in os.listdir(package_path) if os.path.isdir(os.path.join(package_path, v))]
 
             # 如果只有一个版本且是0.0.1-security，删除整个包名文件夹
-            if len(versions) == 1 and versions[0] == "0.0.1-security":
+            if len(versions) == 1 and versions[0] == "0.0.1-security.4":
                 print(f"Deleting package folder: {package_path}")
                 shutil.rmtree(package_path)
             # 如果有多个版本且包含0.0.1-security，删除0.0.1-security版本文件夹
             elif "0.0.1-security" in versions:
-                version_path = os.path.join(package_path, "0.0.1-security")
+                version_path = os.path.join(package_path, "0.0.1-security.4")
                 print(f"Deleting version folder: {version_path}")
                 shutil.rmtree(version_path)
             else:
