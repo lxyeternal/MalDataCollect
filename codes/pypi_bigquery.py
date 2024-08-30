@@ -26,9 +26,9 @@ def process_csv_and_download(csv_file_path):
         next(csv_reader)  # 跳过第一行
 
         for row in csv_reader:
-            name = row[1]
-            version = row[2]
-            link = row[29]
+            name = row[0]
+            version = row[1]
+            link = row[5]
 
             # 如果这个版本还没有下载链接,就添加
             if (name, version) not in packages:
@@ -83,6 +83,6 @@ def generate_package_summary(root_dir):
 
 
 # 使用函数
-# process_csv_and_download('/Users/blue/Downloads/bquxjob_1bca46b1_1914472a44e.csv')
+# process_csv_and_download('/Users/blue/Downloads/bquxjob_71a4b589_191a150bd4a.csv')
 result = generate_package_summary("/Users/blue/Downloads/data")
 print(result)

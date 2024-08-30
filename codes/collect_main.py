@@ -75,13 +75,13 @@ class CollectMain:
 
     def collect_manual(self):
         self.find_collected_pkgs()
-        with open(self.npm_manual_file, "r") as fr:
+        with open(self.pip_manual_file, "r") as fr:
             for line in fr:
                 pkg = line.strip().split("\t")
                 pkg_manager = pkg[0]
-                pkg_name = pkg[1]
+                pkg_name = pkg[0]
                 try:
-                    pkg_version = pkg[2]
+                    pkg_version = pkg[1]
                 except:
                     pkg_version = None
                 print(self.manager, pkg_name, pkg_version)
@@ -172,7 +172,7 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("npm")
+    collect_main = CollectMain("pip")
     collect_main.collect_manual()
     # collect_main.collect_snyk()
     # collect_main.collect_osv()

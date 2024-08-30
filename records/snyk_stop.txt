@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	@juiggitea/voluptatem-quos-blanditiis
+npm	stylesfoxx
 nuget	pathoschild.stardew.mod.buildconfig
 pip	customtkwnter
