@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	stylesfoxx
+npm	bitcoin-sign-message
 nuget	pathoschild.stardew.mod.buildconfig
 pip	customtkwnter
