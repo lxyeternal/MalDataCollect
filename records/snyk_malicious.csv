@@ -18077,3 +18077,31 @@ npm,@diotoborg/molestiae-ratione-tempora,https://security.snyk.io/vuln/SNYK-JS-D
 npm,@diotoborg/et-architecto,https://security.snyk.io/vuln/SNYK-JS-DIOTOBORGETARCHITECTO-7857340,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the @diotoborg/et-architecto package.,"@diotoborg/et-architecto is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 2 SEP 2024,MALICIOUS
 npm,@diotoborg/cum-ab,https://security.snyk.io/vuln/SNYK-JS-DIOTOBORGCUMAB-7857339,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the @diotoborg/cum-ab package.,"@diotoborg/cum-ab is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 2 SEP 2024,MALICIOUS
 npm,@diotoborg/aperiam-cum,https://security.snyk.io/vuln/SNYK-JS-DIOTOBORGAPERIAMCUM-7857338,,*,No source code
+npm,ryukenshiro,,,['1.0.0'],osv
+npm,wmctf2024emmmm,,,['1.0.0'],No source code
+npm,wmctf2024emmm,,,['1.0.0'],osv
+npm,wmctf2024emmmmm,,,['1.0.0'],No source code
+npm,ioiwds,,,[],osv
+npm,iojds,,,[],osv
+npm,iopjds,,,[],No source code
+npm,nayan-remake-pq,,,[],No source code
+npm,pwn-a,,,[],No source code
+npm,skibo,,,[],osv
+npm,basecontext,,,[],osv
+npm,pring-payment-demo-backend,,,[],osv
+npm,snacks-design-system,,,[],osv
+npm,vpro-dhhvc,,,[],No source code
+npm,vrt_hitlijst_generic_voting,,,[],osv
+npm,0g-storage-contracts,,,[],osv
+npm,indrive-web,,,[],osv
+npm,insidepocpackage,,,[],osv
+npm,tappp-tv-ui-lib,,,[],osv
+npm,tappp-tv-ui-libs,,,[],osv
+npm,testcafe-reporter-ayx-reportportal,,,[],osv
+npm,yndx-mask,,,[],No source code
+npm,@desesap289/dev_dependency,,,[],osv
+npm,@ep-mobile/icons,,,[],osv
+npm,@google-research/retvecjs,,,[],osv
+npm,afe-base-component,,,[],osv
+npm,e2e-testa,,,[],No source code
+npm,express-eval,,,[],No source code
