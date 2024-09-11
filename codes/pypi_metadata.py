@@ -53,9 +53,9 @@ def process_json_and_download(file_path, dataset_pypi):
                 continue
     # Download each package that isn't already downloaded
     for pkgname, info in packages_dict.items():
-        if pkgname in downloaded_packages:
-            print(f"{pkgname} is already downloaded, skipping...")
-            continue
+        # if pkgname in downloaded_packages:
+        #     print(f"{pkgname} is already downloaded, skipping...")
+        #     continue
         version = info['version']
         path = info['path']
         download_url = f"https://files.pythonhosted.org/packages/{path}"
@@ -65,4 +65,4 @@ def process_json_and_download(file_path, dataset_pypi):
 
 
 
-process_json_and_download("/Users/blue/Downloads/pypi_metadata.json", "/Users/blue/Downloads/new")
+process_json_and_download("/Users/blue/Documents/GitHub/MalDataCollect/records/pypi_0911.json", "/Users/blue/Downloads/new")

@@ -25,7 +25,7 @@ def count_packages_and_versions(directory):
     return package_count, version_count
 
 if __name__ == "__main__":
-    directory = "/Users/blue/Documents/GitHub/pypi_malregistry"
+    directory = "/Users/blue/Documents/GitHub/malicious-package-dataset/rubygems"
     package_count, version_count = count_packages_and_versions(directory)
     print(f"Total number of package files: {package_count}")
     print(f"Total number of version files: {version_count}")

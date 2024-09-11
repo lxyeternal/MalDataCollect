@@ -1,0 +1,806 @@
+[{
+  "name": "cp-mn-bd-01-mimicat",
+  "version": "0.0.1",
+  "author": "Bogdan Kortnov",
+  "platform": [],
+  "upload_time": "2021-07-26 15:04:31.719098 UTC",
+  "path": "74/e8/74e3625521e3f0772161bde27cc566ef0692c91947436713d477a299d652/cp-mn-bd-01-mimicat-0.0.1.tar.gz"
+}, {
+  "name": "cp-mn-bd-01-mimicat",
+  "version": "0.0.2",
+  "author": "Bogdan Kortnov",
+  "platform": [],
+  "upload_time": "2021-07-26 20:13:01.013168 UTC",
+  "path": "6b/f1/666cbfafc6b2f8b25754f0d37a694bbee392f1eb97e245704c6f3efa35ed/cp-mn-bd-01-mimicat-0.0.2.tar.gz"
+}, {
+  "name": "rock51",
+  "version": "1.0.0",
+  "author": "test",
+  "platform": [],
+  "upload_time": "2024-06-26 14:35:16.409888 UTC",
+  "path": "db/7f/dd6c5919e9a26215454ef3d92d27e4cf07e865a2bff6b84f6c174aa27ab5/rock51-1.0.0.tar.gz"
+}, {
+  "name": "hello-world-package-test",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 12:44:32.446251 UTC",
+  "path": "9d/9a/2cff6e82b8c046aba6baca93db11457a9a1a42f0cd4ca0328e3681d91505/hello_world_package_test-0.1-py3-none-any.whl"
+}, {
+  "name": "hello-world-package-test",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 12:44:34.005837 UTC",
+  "path": "46/43/1a7da45d3d881be282f71880655541d33adc40b8cea5ce499526121cd634/hello_world_package_test-0.1.tar.gz"
+}, {
+  "name": "this-is-poc-fortesting-dontinstall-12345",
+  "version": "0.0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 14:21:12.691644 UTC",
+  "path": "66/45/c1f706e780a5d48e30a324c7d190ee2957a112e1a13330a88ce42a6a7e71/this_is_poc_fortesting_dontinstall_12345-0.0.1-py3-none-any.whl"
+}, {
+  "name": "this-is-poc-fortesting-dontinstall-12345",
+  "version": "0.0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 14:21:14.107992 UTC",
+  "path": "9b/c0/e6b4b3c962d78a8f8d115b0fab3e6681cd1f67ec30d6d54a4d5258bacad3/this_is_poc_fortesting_dontinstall_12345-0.0.1.tar.gz"
+}, {
+  "name": "this-is-poc-fortesting-dontinstall-12345",
+  "version": "0.0.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 14:49:00.332087 UTC",
+  "path": "09/ab/bf2a784f7b15f8bdbac569b695a270f2dfc79708acfbb6e1302d6a73b8cc/this_is_poc_fortesting_dontinstall_12345-0.0.3-py3-none-any.whl"
+}, {
+  "name": "this-is-poc-fortesting-dontinstall-12345",
+  "version": "0.0.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-09-08 14:49:01.458093 UTC",
+  "path": "c8/c5/b53203408c19332c377feba752dc7381ff5c11fc2c40749db760e65f5732/this_is_poc_fortesting_dontinstall_12345-0.0.3.tar.gz"
+}, {
+  "name": "utilhttp",
+  "version": "2.3.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-09-06 14:18:09.143146 UTC",
+  "path": "00/e7/b4d8b172acf7c9a2b3fc31d2688e71d678e8fc03607ec890c9ef4995f5f7/utilhttp-2.3.5-py3-none-any.whl"
+}, {
+  "name": "utilhttp",
+  "version": "2.3.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-09-06 14:18:11.714723 UTC",
+  "path": "48/56/282c364c8901d1490e9407cdb9f4c8e36a75b140ef1233cb2cd45fd3e637/utilhttp-2.3.5.tar.gz"
+}, {
+  "name": "48484efej8id",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:31:56.439913 UTC",
+  "path": "7e/b4/70e11414ea62d1f01116abcfcfcfe0a2211f3736c645a1222027f8f37d8b/48484efej8id-0.1-py3-none-any.whl"
+}, {
+  "name": "48484efej8id",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:31:57.734941 UTC",
+  "path": "61/15/3584a78151b0c30b7953f45146c70dcd080aad09d7f1fb1fddda60f8c521/48484efej8id-0.1.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.2.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:47:58.970980 UTC",
+  "path": "5f/b1/4a1ca2a321a3bb44b20fe62a48ff2a8a1ae4aef72c66fdca68a6dcb945b0/artifact_lab_3_package_f9dafccc-0.2.0-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.2.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:48:00.783835 UTC",
+  "path": "e7/f5/cff9d22e2c6add3bc51a25e5d55f837f631a14042b8cf6a35214d74680aa/artifact_lab_3_package_f9dafccc-0.2.0.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.2.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:53:37.669312 UTC",
+  "path": "94/af/f8f222ff0240bc62971263dcd977eb0c3b59d5a784d39fe6a4c0ac71e5b2/artifact_lab_3_package_f9dafccc-0.2.5-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.2.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:53:39.219871 UTC",
+  "path": "57/9e/c81f821355b32e22f99de13c85801a54611f487c5f15518bc2cf23913f71/artifact_lab_3_package_f9dafccc-0.2.5.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.3.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:57:48.527658 UTC",
+  "path": "10/62/fb1d49af6d9107ccfc9cd94231d7bce008dca3f174ee1e82f6b502220bd1/artifact_lab_3_package_f9dafccc-0.3.0-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-f9dafccc",
+  "version": "0.3.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 09:57:49.269010 UTC",
+  "path": "81/dd/2316494f8c362b0457fb19d8eadc4ed78b46304ad928457b319efd995536/artifact_lab_3_package_f9dafccc-0.3.0.tar.gz"
+}, {
+  "name": "ffefesaewad",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:01:49.117281 UTC",
+  "path": "33/d9/d69b6f705ceffe184fd497e5985b28b2dea80c34ef2a14add5de0865d77e/ffefesaewad-0.1-py3-none-any.whl"
+}, {
+  "name": "ffefesaewad",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:01:50.531767 UTC",
+  "path": "25/e1/83e81048ffeb94e5dad7aec454e3ba84aca6b5a5d7d9c7abadbd80128ac3/ffefesaewad-0.1.tar.gz"
+}, {
+  "name": "muehdhaoie",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:39:35.253370 UTC",
+  "path": "17/ba/069e30551b437d544e5e14646d9ee07446019c4d991de26c18d32fdb69f5/muehdhaoie-0.1-py3-none-any.whl"
+}, {
+  "name": "muehdhaoie",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:39:36.363016 UTC",
+  "path": "a3/82/bd7c254a44640e642901a69e52e822719bbf000b0e8abbfc3fb145f8097b/muehdhaoie-0.1.tar.gz"
+}, {
+  "name": "testerpackage123",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:03:19.653749 UTC",
+  "path": "9b/77/37c4eb284d2f62fb1488992b2121bf9172d99ea5973b5b8a3a64ac32c81f/testerpackage123-0.1-py3-none-any.whl"
+}, {
+  "name": "testerpackage123",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-30 14:03:20.677785 UTC",
+  "path": "e4/d2/54acb691ea8e914d4d752ab351fec67e6e9a0d39389a9a5bf8aa93925645/testerpackage123-0.1.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-77d0c154",
+  "version": "0.1.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 10:14:35.603687 UTC",
+  "path": "24/06/6c276d29d68ba3f08773ad5bb94bdc6734a137057b8547f772f83776e5e4/artifact-lab-3-package-77d0c154-0.1.1.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-77d0c154",
+  "version": "0.1.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 10:38:32.766474 UTC",
+  "path": "73/7c/5f50458488f129a020d5eb9dda7ed88ec1415d184bd12b0aa58d9bf00ffe/artifact-lab-3-package-77d0c154-0.1.2.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-77d0c154",
+  "version": "0.2.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 10:35:20.498935 UTC",
+  "path": "28/25/e68ca95bcd3d5427edd451a4d7956fbd25799b058064565c443610396944/artifact-lab-3-package-77d0c154-0.2.0.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-77d0c154",
+  "version": "0.1.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-28 10:14:33.401574 UTC",
+  "path": "60/c7/2ffb0c6eea53c2ec6f3a89c0f214510a599d806b8004afeec538980f0b65/artifact_lab_3_package_77d0c154-0.1.1-py3-none-any.whl"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.1",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 09:17:21.045519 UTC",
+  "path": "ff/46/5798bdea35b311e8b05c3d50ae825376f5ce9f3de3217f30c5f52c1cd272/comfyui_node_pkg-0.1-py3-none-any.whl"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.1",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 09:17:22.554216 UTC",
+  "path": "2f/33/d761b9f5dabf94f8410bcd8fc483e1ee12828576ac2d9ef0c0f9f84d7fd4/comfyui_node_pkg-0.1.tar.gz"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.2",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 09:46:54.125348 UTC",
+  "path": "e4/72/d1bc58ef78aafd8c61c78df8ce3ee73f880232e6d927a8bbf9ba03f4f40c/comfyui_node_pkg-0.2-py3-none-any.whl"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.2",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 09:46:56.117515 UTC",
+  "path": "94/79/df21f4fa8241f5ffacd0f0febbe93b941e830c9e7159f54c87dc7439cfa1/comfyui_node_pkg-0.2.tar.gz"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.3",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 13:24:15.645659 UTC",
+  "path": "22/f9/516ca50c4865a5eed9003964397b42b58d152faf62825589fd0b4259c36d/comfyui_node_pkg-0.3-py3-none-any.whl"
+}, {
+  "name": "comfyui-node-pkg",
+  "version": "0.3",
+  "author": "Raul Onitza-Klugman",
+  "platform": [],
+  "upload_time": "2024-09-03 13:24:16.953466 UTC",
+  "path": "64/74/11bf01ad0d73f17d0b4db076e8b8fc54f708e4c8f0aca029b960b79db33e/comfyui_node_pkg-0.3.tar.gz"
+}, {
+  "name": "flophttp",
+  "version": "2.3.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-09-01 07:38:04.538547 UTC",
+  "path": "3e/56/6f96ee6194db463730b1265750fbbc386a8a328020fa615bce038382bf62/flophttp-2.3.5-py3-none-any.whl"
+}, {
+  "name": "flophttp",
+  "version": "2.3.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-09-01 07:38:06.541252 UTC",
+  "path": "ee/e1/2b10621dee84dd7e6d851ee76f58a31f51a094812e88a28bad464783704d/flophttp-2.3.5.tar.gz"
+}, {
+  "name": "invokehttp",
+  "version": "2.5.3",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-08-29 04:03:47.588662 UTC",
+  "path": "91/c7/1cf23b22cc5bb5a9409d1e198294c78b67f78ccfdbd31f1ad2b2e9477639/invokehttp-2.5.3-py3-none-any.whl"
+}, {
+  "name": "invokehttp",
+  "version": "2.5.3",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-08-29 04:03:49.872442 UTC",
+  "path": "20/fb/a16911424b302eea994988cdb095f25db379509c34dce13be736ae523c0d/invokehttp-2.5.3.tar.gz"
+}, {
+  "name": "invokehttp",
+  "version": "2.5.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-08-29 04:27:15.486046 UTC",
+  "path": "8e/f8/30175873d7b0cb64be7a75f6d9e1342abcf8f867a44ee6151d83d8ba54b3/invokehttp-2.5.5-py3-none-any.whl"
+}, {
+  "name": "invokehttp",
+  "version": "2.5.5",
+  "author": "Kiany Reeves",
+  "platform": [],
+  "upload_time": "2024-08-29 04:27:17.920127 UTC",
+  "path": "36/94/e6ef63fc59c1747f4252284bc3616bd58f3ed73bd56397152fc1de2ebad1/invokehttp-2.5.5.tar.gz"
+}, {
+  "name": "iamtestpackage626",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-11 12:43:42.361594 UTC",
+  "path": "ba/65/d45f767301892a1b3de1a8d553dc635734005fcbe336c5c2a79dbb4b431d/iamtestpackage626-0.1.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:59:36.518078 UTC",
+  "path": "13/86/03bad5ded1501fb7908fa5d5a38c2973f168af12edc56a1ce72b5bd707a7/vesuvius-0.2-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-f70fc6dd",
+  "version": "0.1.1",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:12:17.531049 UTC",
+  "path": "a8/b4/b9acd9817272fdde22f59910648ef2d09a145894f4bc9eda5d40dcb4283d/artifact-lab-3-package-f70fc6dd-0.1.1.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.7.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-02 17:00:46.429139 UTC",
+  "path": "45/74/96589f80760d61ddf3b7d0b82cdaa6126ef75f97120c06b528d5f95c0070/vesuvius-0.7.1.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.4",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 15:27:06.233663 UTC",
+  "path": "51/9b/35ac965bc9dc5fa14a8657fe79586fa191ae0052339a593bc30ca6345257/vesuvius-0.1.4-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.4rc0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-16 09:00:29.007763 UTC",
+  "path": "20/e2/1e0ecd057e5307fcec0a205a191c3232a81ca88ddb224b1422644a3d6b8a/vesuvius-0.1.4rc0.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-21 07:53:16.117932 UTC",
+  "path": "e0/41/b3082b8be14c8a99c4f57f3a0b72d2bd2c05dc458991cc4c650c8936a1ef/vesuvius-0.1.5-py3-none-any.whl"
+}, {
+  "name": "adafruit-display-text",
+  "version": "1.0.0",
+  "author": "Pastaga",
+  "platform": [],
+  "upload_time": "2024-07-29 15:13:51.619819 UTC",
+  "path": "4d/24/d96dbfb82c642c79edab67ccf2f962e6d297a8e1bb449977dafa72a5afc8/adafruit_display_text-1.0.0.tar.gz"
+}, {
+  "name": "fasdghjkhjafsd",
+  "version": "0.0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-11 02:41:10.009946 UTC",
+  "path": "1d/e0/970ec59922a7806fc133dd10da4ae6ab4990c51ea6b302c046257bdc1642/fasdghjkhjafsd-0.0.1.tar.gz"
+}, {
+  "name": "flashinfer",
+  "version": "1.0.0",
+  "author": "Pastaga",
+  "platform": [],
+  "upload_time": "2024-07-29 08:15:06.415545 UTC",
+  "path": "1a/e7/30879ac8320486b56ccac07916121db85ddcf50fb64ea7ff3afee9fa7921/flashinfer-1.0.0-py3-none-any.whl"
+}, {
+  "name": "hexteamibm",
+  "version": "1.0.4",
+  "author": "hari",
+  "platform": [],
+  "upload_time": "2024-07-21 14:35:36.894524 UTC",
+  "path": "14/63/8f47ce6b6d94a1423232f7896177a0c3fc26e503d4212ace4a2ad0907920/hexteamibm-1.0.4.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:59:35.386847 UTC",
+  "path": "eb/79/f7a72f372dfab6ec5068ae4bb67031bb32411ff1ae4387717598d1afb975/vesuvius-0.1.1-py3-none-any.whl"
+}, {
+  "name": "hexmanibm",
+  "version": "1.0.4",
+  "author": "hari",
+  "platform": [],
+  "upload_time": "2024-07-21 14:29:44.221042 UTC",
+  "path": "a7/50/1a7259aea85a6e7e7bfc4a08b2ecf904166a31d5273440fcc8c86fcfcb71/hexmanibm-1.0.4.tar.gz"
+}, {
+  "name": "orion.algo.extrapol",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:28:07.745831 UTC",
+  "path": "64/27/59f2931945a8dfa188265a9dd13276b8223a13ef2953b3d554b13e5798d1/orion.algo.extrapol-1.0.0-py3-none-any.whl"
+}, {
+  "name": "flashinfer",
+  "version": "1.0.0",
+  "author": "Pastaga",
+  "platform": [],
+  "upload_time": "2024-07-29 08:15:13.483158 UTC",
+  "path": "56/4a/d0343d156614746ffbc22a318ef6af70e45934a62c2a3f888a31110a6583/flashinfer-1.0.0.tar.gz"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.6",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 12:52:27.286397 UTC",
+  "path": "b7/83/24da6a9f826e0f90dfe4d4c9d07a50ac50f9307bcd14dfa78e7d6fe2e128/requests_stubs-0.0.6.tar.gz"
+}, {
+  "name": "arielbogo",
+  "version": "0.0.4",
+  "author": "arielbogo",
+  "platform": [],
+  "upload_time": "2024-07-25 12:46:22.046941 UTC",
+  "path": "c9/4c/db2fe23d4aba689d9219ca48329ce5c3d0f751e3a476482f20c0e93e44da/arielbogo-0.0.4.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:59:38.068496 UTC",
+  "path": "79/e2/1581362f6bde86a94501713b2527b2112ef2768045fbfc5bc78a9e630ffa/vesuvius-0.2.tar.gz"
+}, {
+  "name": "fasdghjkhjafsd",
+  "version": "0.0.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-11 03:04:56.966530 UTC",
+  "path": "ab/56/69a8c997811d1857cf053e1f27f1945b1a523770b3be0971a8e204ec25bc/fasdghjkhjafsd-0.0.2.tar.gz"
+}, {
+  "name": "akobo",
+  "version": "0.0.4",
+  "author": "akobo",
+  "platform": [],
+  "upload_time": "2024-07-25 13:29:48.196224 UTC",
+  "path": "95/aa/e985dff2b6d645500ad5a1f3fe85e07d1bbcff24ddca4a26692f38244bf3/akobo-0.0.4.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-30 23:23:30.909753 UTC",
+  "path": "f2/d4/c8683152ec17ad1d883fe389d092f81326c8e05f7b34f517a3b946d8c812/vesuvius-0.5.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.4",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 15:27:07.661262 UTC",
+  "path": "0b/05/ed0636cb0ffa3ec5e0f0fcd1d9f53ae5e6feafba6ef266129988f0a0bea9/vesuvius-0.1.4.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-09 12:14:51.836204 UTC",
+  "path": "71/26/e58d35e9e85712807fac3a6bf77b3457ebd74c109bfb7a3fce3e3731fb9b/vesuvius-0.1.3-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3rc0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 15:21:04.743136 UTC",
+  "path": "46/97/6f57b104cfdd8fcc6ef1e4681da641886e950cf604368d3c931bf3791c79/vesuvius-0.1.3rc0-py3-none-any.whl"
+}, {
+  "name": "adafruit-imageload",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:25:42.549976 UTC",
+  "path": "16/24/6f8af334828015c4938dd52309a7e193dd332329cf8809b2b1e32ab08848/adafruit_imageload-1.0.0.tar.gz"
+}, {
+  "name": "appetize-cli",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:19:23.598570 UTC",
+  "path": "ce/18/a89e315e736488b78bc02775ed1e5f3fb6f62e1df4b2af9a2ff40d44ce55/appetize-cli-1.0.0.tar.gz"
+}, {
+  "name": "appetize-cli",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:19:22.158748 UTC",
+  "path": "2a/65/5a8b872514923e9edd040e86f92d95e2bdea48f41defc0bd2201458f7d64/appetize_cli-1.0.0-py3-none-any.whl"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.7",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 13:01:10.337313 UTC",
+  "path": "72/ea/7d972d611842ef7bd4200842bea28f5b7f4b2ff1e2366ff0f7bfb34d664f/requests_stubs-0.0.7.tar.gz"
+}, {
+  "name": "shokobo",
+  "version": "0.0.4",
+  "author": "shokobo",
+  "platform": [],
+  "upload_time": "2024-07-23 11:54:28.395879 UTC",
+  "path": "36/e6/1d2f0529c7346405a32110a7827f2d72d9e4cdf57f66943ccc46f645f3b3/shokobo-0.0.4.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-f70fc6dd",
+  "version": "0.1.1",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:12:15.748834 UTC",
+  "path": "ad/b9/7bd9654589fa0f0ccd3eaec0eaa39495bf7138b4453e73229d440cd0d568/artifact_lab_3_package_f70fc6dd-0.1.1-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3b0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 14:37:42.920054 UTC",
+  "path": "93/e7/f8c68145c064cc17d2a533404536da1e54cbae5d039831b102f1a174da35/vesuvius-0.1.3b0.tar.gz"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.5",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 12:37:13.904749 UTC",
+  "path": "d6/71/dd839be129238e5ddeff1508cb28c7ec63807c04a551080843aa8fe4f31e/requests_stubs-0.0.5.tar.gz"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.6",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 12:52:26.047085 UTC",
+  "path": "41/00/ec8794fff20f3ca6a3e72831111087e020508bc1f383070ff76b49fe1bb6/requests_stubs-0.0.6-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-06 15:20:02.274321 UTC",
+  "path": "27/a1/72eb5106db8039e471b8efd7735e0844dc5b0f68fd72f072b8f1fba45fda/vesuvius-0.1.2-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-21 07:53:17.311436 UTC",
+  "path": "e8/ce/da46150a0c0e1f27f05bfcd68539803b6d144f64fcad0206a26dff945d73/vesuvius-0.1.5.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-2387cbf7",
+  "version": "0.1.1",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:27:41.084606 UTC",
+  "path": "26/ad/af531c6afb50caba80b0667b9897b41a92c49ed117fc0335e065b934d91c/artifact-lab-3-package-2387cbf7-0.1.1.tar.gz"
+}, {
+  "name": "dependency-confusion-test-666",
+  "version": "999999.0.0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-31 13:08:16.309416 UTC",
+  "path": "90/b2/e45233e355fbca71e7adbdef5b4a34b5312921f6f90eba823fe598615041/dependency_confusion_test_666-999999.0.0.tar.gz"
+}, {
+  "name": "fasdghjkhjafsd",
+  "version": "0.0.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-11 03:15:39.887345 UTC",
+  "path": "5f/bd/cdf9d33610997ce2955f9bf7bb65d471ba102e98f8f403be509c0b21ba5f/fasdghjkhjafsd-0.0.3.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 22:46:48.152083 UTC",
+  "path": "fe/69/66f39dc401daeb3c50c6aa286c9cbd6483be19d0d7ec089f2f6e117814e1/vesuvius-0.3.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.4",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-30 23:18:07.981312 UTC",
+  "path": "23/16/55922eac95548c18c7a4308a0d67841507cd229a2cfd8fd30b07d20f6e39/vesuvius-0.4.tar.gz"
+}, {
+  "name": "hexmanibm",
+  "version": "1.0.4",
+  "author": "hari",
+  "platform": [],
+  "upload_time": "2024-07-21 14:29:42.253444 UTC",
+  "path": "15/3f/9db2b7cba5bb812c059ae3670408f912a1ffe371c4d69a7f547f0e73362d/hexmanibm-1.0.4-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:09:10.437981 UTC",
+  "path": "1c/72/8c582e4deaf16a6088cd5eb2a5576947bcfa277bad8c38eadc1789408069/vesuvius-0.1-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:09:11.901353 UTC",
+  "path": "41/79/3a1cc4c62af06b049f4d92d4e55949f3d99667102bcffd636c11e4159283/vesuvius-0.1.tar.gz"
+}, {
+  "name": "graphcore-cloud-tools",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:32:05.812363 UTC",
+  "path": "1b/ff/d2ea24ed4978a1836216d44a5d20992598577dfb25f7c70be9b093ad0b00/graphcore-cloud-tools-1.0.0.tar.gz"
+}, {
+  "name": "popeye-xyz",
+  "version": "1.0.4",
+  "author": "hackz boy",
+  "platform": [],
+  "upload_time": "2024-07-22 14:25:18.691773 UTC",
+  "path": "99/d0/c36d400cdc95536f95664d2e98821eb88ad870e70c63031dd7038838607c/popeye_xyz-1.0.4.tar.gz"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.5",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 12:37:12.732463 UTC",
+  "path": "0e/b0/0aa33070beef8f589d9573f576a6590da7005e2e373101fb14a8fdc7bf13/requests_stubs-0.0.5-py3-none-any.whl"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.4",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 11:59:01.417748 UTC",
+  "path": "95/f9/13e51e3686881b0791fcee1be390954c012dbedb8fc37ad7591ab25ec5a8/requests_stubs-0.0.4-py3-none-any.whl"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.4",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 11:59:04.276977 UTC",
+  "path": "3c/66/945a6067850fb9d23d0da41cba4a37b3756ea765876a2dedda1936e5e8d0/requests_stubs-0.0.4.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.7.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-02 17:00:44.931878 UTC",
+  "path": "b6/29/c1aa7915d24406ac21720b767daac88910f10a87cc09de47a5488cbc5fcf/vesuvius-0.7.1-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-09 12:14:53.434158 UTC",
+  "path": "fc/1b/ffdbfd9580f7396cd1848d76842fc6e8e69b2c0d399b72980c30b9ca896a/vesuvius-0.1.3.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.4rc0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-16 09:00:27.900493 UTC",
+  "path": "db/18/4561d7eda2a151e12c56f39412a1adcba0d6584b20185fd468b8a12bf64c/vesuvius-0.1.4rc0-py3-none-any.whl"
+}, {
+  "name": "graphcore-cloud-tools",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:32:04.623476 UTC",
+  "path": "5a/b0/bdac6d2f11dbc9b7e6a52856b6b043ad1eb996c0ca7c6f03c2f569322ef6/graphcore_cloud_tools-1.0.0-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.1",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 21:59:37.428016 UTC",
+  "path": "d5/40/af445806f3f8ffc952773354dc1eee6aa1a59a204211e56b8cad7a94b4fc/vesuvius-0.1.1.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.4",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-30 23:18:06.922870 UTC",
+  "path": "b9/b0/3aea8c5944c39833dc14ddef8bbd09ee676aba321a7899fbcb79a41846bf/vesuvius-0.4-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.5",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-30 23:23:28.793880 UTC",
+  "path": "df/b6/be3f356a9a0010ce17feba7afda2d68f95d0ba12be86584bf6406fe732c6/vesuvius-0.5-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-2387cbf7",
+  "version": "0.1.0",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:37:00.198522 UTC",
+  "path": "9a/8f/a1533eac837233104e8e845872f385959190bb1e1bb49d7db607794047b5/artifact_lab_3_package_2387cbf7-0.1.0-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-2387cbf7",
+  "version": "0.1.0",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:37:01.231309 UTC",
+  "path": "b2/1a/264f3695962fde121ba988ba2d797dc1dc562fc8a0391aa1d7e2836c35d7/artifact-lab-3-package-2387cbf7-0.1.0.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.2",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-06 15:20:03.230514 UTC",
+  "path": "30/ce/d6dcde4ef75cc3c5b35ed2a32fde8c8013fd345dea60004af9a064376dfd/vesuvius-0.1.2.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3b0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 14:37:41.730119 UTC",
+  "path": "12/b0/9e03e0ccb1df1ceda4df7b8017544d715b7911cdf51fc833e85c9038e838/vesuvius-0.1.3b0-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.6",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-21 10:19:10.326776 UTC",
+  "path": "63/cf/2fd0a1c7a35990229463402f5cef35ff0336bb43b5a0f04d348ef6b57fe4/vesuvius-0.1.6-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.6",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-21 10:19:11.721529 UTC",
+  "path": "f9/33/c8e4d36057b98c8e4b221d845f1dc57c2192c87121481b225f72b169e651/vesuvius-0.1.6.tar.gz"
+}, {
+  "name": "artifact-lab-3-package-f70fc6dd",
+  "version": "0.1.0",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 16:42:34.087559 UTC",
+  "path": "6c/99/a66d3ef6d37258dcb6ebea8e523880cd2fec16882843c3bda79e3ae053dc/artifact_lab_3_package_f70fc6dd-0.1.0-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.7",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-01 17:13:38.402351 UTC",
+  "path": "5b/ab/183a32ff97f999847a5933770c4bae52d39d9435c6f5d16b0df11dcad8e6/vesuvius-0.7-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.1.3rc0",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-14 15:21:06.427301 UTC",
+  "path": "ac/f8/1d92053942b3dedbc3db7f2f03ddf37f5a956f70bca1468f0fe250147600/vesuvius-0.1.3rc0.tar.gz"
+}, {
+  "name": "adafruit-display-text",
+  "version": "1.0.0",
+  "author": "Pastaga",
+  "platform": [],
+  "upload_time": "2024-07-29 15:13:50.187868 UTC",
+  "path": "45/d2/1b717c57ed33d4c2bbb2fb690318fe0c3a6fcba5acd5c1fb49922326bba2/adafruit_display_text-1.0.0-py3-none-any.whl"
+}, {
+  "name": "adafruit-imageload",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:25:41.419640 UTC",
+  "path": "ca/2c/30fd836f55f97c9c9b675b0057fe6cce78480254563793b9cce7c2c9203e/adafruit_imageload-1.0.0-py3-none-any.whl"
+}, {
+  "name": "asptcer",
+  "version": "1.0.0",
+  "author": "hari",
+  "platform": [],
+  "upload_time": "2024-07-21 14:50:45.910546 UTC",
+  "path": "8b/e5/2b3002774b6ed9b53d06183534bde3d2bd72e8d4072a2f0b288191761038/asptcer-1.0.0.tar.gz"
+}, {
+  "name": "orion.algo.extrapol",
+  "version": "1.0.0",
+  "author": "whitehatguy",
+  "platform": [],
+  "upload_time": "2024-07-30 13:28:09.186461 UTC",
+  "path": "5a/d7/cba983452cc1b47c0b44a9a5e168022f672cc54f701e18f8ecb1877bad67/orion.algo.extrapol-1.0.0.tar.gz"
+}, {
+  "name": "requests-stubs",
+  "version": "0.0.7",
+  "author": "requests-stubs",
+  "platform": [],
+  "upload_time": "2024-07-22 13:01:08.963392 UTC",
+  "path": "41/82/ab042fb5c93c46ffe730317e480b092219f20ec8a1b959cdbeb5a3a32451/requests_stubs-0.0.7-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.3",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-07-29 22:46:46.932282 UTC",
+  "path": "fe/a9/b00af3a4d395d766c015182d882502439f5a8c4d5166b49d6e382fd05159/vesuvius-0.3-py3-none-any.whl"
+}, {
+  "name": "artifact-lab-3-package-2387cbf7",
+  "version": "0.1.1",
+  "author": "Tu Nombre",
+  "platform": [],
+  "upload_time": "2024-08-15 19:27:39.911601 UTC",
+  "path": "ad/b1/422a9f6b9366efb4a873350ad0207f525a1c0c10ce4a9f48187bcff6846c/artifact_lab_3_package_2387cbf7-0.1.1-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.6",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-01 00:14:19.084525 UTC",
+  "path": "c6/a7/8183eb794beb2c107ef309697d39bd581d59b2c32c0c9a2cf0be505bd116/vesuvius-0.6-py3-none-any.whl"
+}, {
+  "name": "vesuvius",
+  "version": "0.6",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-01 00:14:20.620469 UTC",
+  "path": "c3/2c/516fae6445563dae7f8a1b9edc72deca99f844b46dc70704f26a4f72f1da/vesuvius-0.6.tar.gz"
+}, {
+  "name": "vesuvius",
+  "version": "0.7",
+  "author": null,
+  "platform": [],
+  "upload_time": "2024-08-01 17:13:39.617723 UTC",
+  "path": "38/6b/428d9eb70f41435a7a8c5d47324496181f7b73cd9a465edb719fb02c515a/vesuvius-0.7.tar.gz"
+}]
