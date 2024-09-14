@@ -12,7 +12,7 @@
     "osv_baseurl": "https://osv.dev/list?ecosystem={}",
     "record_file": "../records/snyk_malicious.csv",
     "pip_manual_file": "../records/pip_0830.txt",
-    "npm_manual_file": "../records/npm_manual_packages.txt",
+    "npm_manual_file": "../records/npm_0914.txt",
     "rubygems_manual_file": "../records/rubygems_manual_packages.txt",
     "stop_file": "../records/snyk_stop.txt",
     "pypi_mirrors": {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"},
