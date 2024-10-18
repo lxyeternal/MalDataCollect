@@ -1,5 +1,5 @@
 go	a
 maven	b
-npm	bitcoin-sign-message
+npm	@diotoborg/eos-eum
 nuget	pathoschild.stardew.mod.buildconfig
-pip	customtkwnter
+pip	reqjuests

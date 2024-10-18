@@ -10,31 +10,59 @@
 # Description：
 """
 
-import csv
 import os
+import json
 import requests
-from collections import defaultdict
+from google.cloud import bigquery
 from urllib.parse import urlparse
 
 
-def process_csv_and_download(csv_file_path):
+def query_bigquery(names):
+    # 设置凭证文件路径（使用你的服务账户 JSON 凭证文件）
+    client = bigquery.Client.from_service_account_json('../configs/taicen-36403b880a33.json')
+    # 构建查询字符串
+    names_condition = ' OR '.join([f'name = "{name}"' for name in names])
+    query = f"""
+    SELECT name, version, path 
+    FROM `bigquery-public-data.pypi.distribution_metadata` 
+    WHERE {names_condition}
+    """
+    # 执行查询
+    query_job = client.query(query)
+    # 获取查询结果
+    results = query_job.result()
+    return results
+
+
+def process_txt_and_query(txt_file_path):
+    names = []
+    # 读取TXT文件
+    with open(txt_file_path, 'r') as file:
+        for line in file:
+            parts = line.strip().split('\t')
+            if len(parts) > 1:
+                names.append(parts[1])
+    # 调用 BigQuery 查询
+    results = query_bigquery(names)
+    # 处理查询结果，按规则筛选路径
     packages = {}
+    for row in results:
+        name = row.name
+        version = row.version
+        path = row.path
+        # 只保留一个路径，优先级为 .tar.gz > .zip > .whl
+        if (name, version) not in packages:
+            packages[(name, version)] = path
+        else:
+            current_path = packages[(name, version)]
+            if (path.endswith('.tar.gz') or path.endswith('.zip')) and not (current_path.endswith('.tar.gz') or current_path.endswith('.zip')):
+                packages[(name, version)] = path
 
-    # 读取CSV文件
-    with open(csv_file_path, 'r') as file:
-        csv_reader = csv.reader(file)
-        next(csv_reader)  # 跳过第一行
+    # 调用下载函数
+    download_packages(packages)
 
-        for row in csv_reader:
-            name = row[0]
-            version = row[1]
-            link = row[5]
 
-            # 如果这个版本还没有下载链接,就添加
-            if (name, version) not in packages:
-                packages[(name, version)] = link
-
-    # 下载文件
+def download_packages(packages):
     for (name, version), link in packages.items():
         full_link = f"https://files.pythonhosted.org/packages/{link}"
 
@@ -45,15 +73,10 @@ def process_csv_and_download(csv_file_path):
         # 获取文件名
         file_name = os.path.basename(urlparse(full_link).path)
 
-        # 如果是.whl文件,改名为.zip
-        if file_name.endswith('.whl'):
-            file_name = file_name[:-4] + '.zip'
-
-        save_path = os.path.join(save_dir, file_name)
-
         # 下载文件
         response = requests.get(full_link)
         if response.status_code == 200:
+            save_path = os.path.join(save_dir, file_name)
             with open(save_path, 'wb') as f:
                 f.write(response.content)
             print(f"Downloaded: {save_path}")
@@ -61,28 +84,6 @@ def process_csv_and_download(csv_file_path):
             print(f"Failed to download: {full_link}")
 
 
-def generate_package_summary(root_dir):
-    packages = defaultdict(set)
-
-    # 遍历文件夹结构
-    for name in os.listdir(root_dir):
-        name_path = os.path.join(root_dir, name)
-        if os.path.isdir(name_path):
-            for version in os.listdir(name_path):
-                version_path = os.path.join(name_path, version)
-                if os.path.isdir(version_path):
-                    packages[name].add(version)
-
-    # 生成摘要
-    summary = []
-    for name, versions in packages.items():
-        versions_str = ', '.join(sorted(versions))
-        summary.append(f"{name} [{versions_str}] <br>")
-
-    return '\n'.join(summary)
-
-
-# 使用函数
-# process_csv_and_download('/Users/blue/Downloads/bquxjob_71a4b589_191a150bd4a.csv')
-result = generate_package_summary("/Users/blue/Downloads/data")
-print(result)
+if __name__ == "__main__":
+    txt_file_path = "/Users/blue/Documents/GitHub/MalDataCollect/records/osv_pypi_dataset.txt"  # 请替换为你的 TXT 文件路径
+    process_txt_and_query(txt_file_path)

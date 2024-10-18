@@ -13,7 +13,6 @@
 import os
 import ast
 import json
-from pymongo import MongoClient
 from codes.pypi_collect import pypi_pkg_links
 
 
@@ -31,11 +30,15 @@ def save_info_txt(package_manager, package_name, version, file_path):
         fw.write(package_manager + "\t" + package_name + "\t" + version + "\n")
 
 
-def osv_dataset():
+def osv_dataset(package_manager="npm"):
+    if package_manager == "pypi":
+        detected_pkgs = os.listdir("/Users/blue/Documents/GitHub/pypi_malregistry")
+    else:
+        detected_pkgs = os.listdir("/Users/blue/Documents/GitHub/malicious-package-dataset/npm")
     dataset_dir = "/Users/blue/Downloads/OSV"
     pkg_managers = os.listdir(dataset_dir)
     for pkg_manager in pkg_managers:
-        if pkg_manager == "npm":
+        if pkg_manager == package_manager:
             pkg_names = os.listdir(os.path.join(dataset_dir, pkg_manager))
             for pkg_name in pkg_names:
                 json_files = extract_json_files(os.path.join(dataset_dir, pkg_manager, pkg_name))
@@ -53,11 +56,13 @@ def osv_dataset():
                             package_info = affected.get("package", {})
                             package_name = package_info.get("name", "NA")
                             package_version = affected.get("versions", [])
+                            if package_name in detected_pkgs:
+                                continue
                             if package_version != []:
                                 print(package_name + "\t" + str(package_version))
                             else:
                                 print(package_name)
-                            save_info_txt(pkg_manager, package_name, str(package_version), "../records/osv_npm_dataset.txt")
+                            save_info_txt(pkg_manager, package_name, str(package_version), f"../records/osv_{package_manager}_dataset.txt")
 
 def read_txt(file_path):
     package_names = []
