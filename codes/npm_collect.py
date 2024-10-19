@@ -24,7 +24,9 @@ def npm_pkg_links(npm_mirrors, pkgname, dataset_npm) -> int:
         if response.status_code == 200:
             data = response.json()
             versions_data = data.get('versions', {})
-            for version, details in versions_data.items():
+            for i, (version, details) in enumerate(versions_data.items()):
+                if i >= 10:  # Only process the first 10 versions
+                    break
                 version = details.get('version', 'N/A')
                 complete_link = details.get('dist', {}).get('tarball', 'N/A')
                 link_filename = complete_link.split("/")[-1]

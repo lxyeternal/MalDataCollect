@@ -35,6 +35,11 @@ def osv_dataset(package_manager="npm"):
         detected_pkgs = os.listdir("/Users/blue/Documents/GitHub/pypi_malregistry")
     else:
         detected_pkgs = os.listdir("/Users/blue/Documents/GitHub/malicious-package-dataset/npm")
+        with open("/Users/blue/Documents/GitHub/MalDataCollect/records/npm_manual_packages.txt", "r") as fr:
+            lines = fr.readlines()
+            for line in lines:
+                package_manager, package_name, version = line.strip().split("\t")
+                detected_pkgs.append(package_name)
     dataset_dir = "/Users/blue/Downloads/OSV"
     pkg_managers = os.listdir(dataset_dir)
     for pkg_manager in pkg_managers:
@@ -62,7 +67,11 @@ def osv_dataset(package_manager="npm"):
                                 print(package_name + "\t" + str(package_version))
                             else:
                                 print(package_name)
-                            save_info_txt(pkg_manager, package_name, str(package_version), f"../records/osv_{package_manager}_dataset.txt")
+                            save_info_txt(pkg_manager, package_name, str(package_version), f"../records/new_osv_{package_manager}_dataset.txt")
+
+
+osv_dataset("npm")
+
 
 def read_txt(file_path):
     package_names = []
@@ -92,47 +101,4 @@ def osv_collection():
             continue
         else:
             pypi_pkg_links(pypi_mirrors, package_name, "/Users/blue/Documents/MalDataset/osv_pypi", versions)
-
-
-def query_mongodb(requested_name):
-    # 连接到MongoDB
-    client = MongoClient('mongodb://localhost:27017/')  # 替换为你的MongoDB连接字符串
-    # 选择数据库和集合
-    db = client['pypi']  # 替换为你的数据库名
-    collection = db['pypimetadata']  # 替换为你的集合名
-    # 尝试原始名称和替换 "-" 为 "_" 的名称
-    names_to_try = [requested_name, requested_name.replace('-', '_')]
-    results = []
-    for name in names_to_try:
-        # 构建查询
-        query = {"requested_name": name}
-        # 执行查询
-        results = list(collection.find(query))
-        if results:
-            break  # 如果找到结果，就退出循环
-    if not results:
-        # print(f"No results found for package: {requested_name}")
-        pass
-    else:
-        for document in results:
-            if 'releases' in document:
-                releases = document['releases']
-                for version, release_info in releases.items():
-                    if release_info and isinstance(release_info, list) and len(release_info) > 0:
-                        url = release_info[0].get('url')
-                        if url:
-                            print(f"Package: {requested_name}, Version: {version}, URL: {url}")
-
-
-def data_existed():
-    dataset_dir = "/Users/blue/Documents/GitHub/pypi_malregistry"
-    exist_packages = os.listdir(dataset_dir)
-    package_names = read_txt("../records/osv_dataset.txt")
-    for pkg in package_names:
-        package_name = pkg[1]
-        if package_name not in exist_packages:
-            query_mongodb(package_name)
-
-
-osv_dataset()
 

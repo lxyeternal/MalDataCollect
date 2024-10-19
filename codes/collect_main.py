@@ -88,6 +88,8 @@ class CollectMain:
                 if pkg_name in self.collected_pkgs:
                     print("已经采集过该包：{}".format(pkg_name))
                     continue
+                if pkg_name in ["@diotoborg/autem-vero", "@diotoborg/beatae-culpa", "@diotoborg/fugiat-doloremque"]:
+                    continue
                 if self.manager == "pip":
                     flag = pypi_pkg_links(self.pypi_mirrors, pkg_name, self.dataset_pypi, pkg_version)
                 elif self.manager == "npm":
@@ -172,7 +174,7 @@ class CollectMain:
 
 
 if __name__ == '__main__':
-    collect_main = CollectMain("pip")
-    # collect_main.collect_manual()
-    collect_main.collect_snyk()
+    collect_main = CollectMain("npm")
+    collect_main.collect_manual()
+    # collect_main.collect_snyk()
     # collect_main.collect_osv()
