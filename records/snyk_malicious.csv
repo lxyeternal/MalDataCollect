@@ -20354,3 +20354,53 @@ npm,elk1yf,,,[],osv
 npm,missive-webhooks,,,['1.0.0'],osv
 npm,new-al-bum-av-ailable-2014-15374-tourniquets-hacksaws-and-graves-53p3g-eabxqr,,,[],osv
 npm,as-rest-api-v6,,,[],osv
+pip,claudeai-eng,https://security.snyk.io/vuln/SNYK-PYTHON-CLAUDEAIENG-8400707,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the claudeai-eng package.,"claudeai-eng is a malicious package. This package mimics a tool for working with Claude, silently exfiltrating data and compromising developer environments.",INTRODUCED: 22 NOV 2024,MALICIOUS
+pip,gptplus,https://security.snyk.io/vuln/SNYK-PYTHON-GPTPLUS-8400706,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the gptplus package.,"gptplus is a malicious package. This package mimics a tool for working with ChatGPT, silently exfiltrating data and compromising developer environments.",INTRODUCED: 22 NOV 2024,MALICIOUS
+pip,fabrice,https://security.snyk.io/vuln/SNYK-PYTHON-FABRICE-8350064,,"[0,]",No source code
+pip,cryptoaitools,https://security.snyk.io/vuln/SNYK-PYTHON-CRYPTOAITOOLS-8340638,,"[0,]",No source code
+pip,artifact-lab-3-package-24ddbc49,https://security.snyk.io/vuln/SNYK-PYTHON-ARTIFACTLAB3PACKAGE24DDBC49-8323738,,"[0,]",No source code
+pip,123bla,https://security.snyk.io/vuln/SNYK-PYTHON-123BLA-8323737,,"[0,]",No source code
+pip,youreallydontwantthispackage2131,https://security.snyk.io/vuln/SNYK-PYTHON-YOUREALLYDONTWANTTHISPACKAGE2131-8323735,,"[0,]",No source code
+pip,flag-leak-r,https://security.snyk.io/vuln/SNYK-PYTHON-FLAGLEAKR-8323734,,"[0,]",No source code
+pip,claudeai-eng,https://security.snyk.io/vuln/SNYK-PYTHON-CLAUDEAIENG-8400707,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the claudeai-eng package.,"claudeai-eng is a malicious package. This package mimics a tool for working with Claude, silently exfiltrating data and compromising developer environments.",INTRODUCED: 22 NOV 2024,MALICIOUS
+pip,gptplus,https://security.snyk.io/vuln/SNYK-PYTHON-GPTPLUS-8400706,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the gptplus package.,"gptplus is a malicious package. This package mimics a tool for working with ChatGPT, silently exfiltrating data and compromising developer environments.",INTRODUCED: 22 NOV 2024,MALICIOUS
+pip,fabrice,https://security.snyk.io/vuln/SNYK-PYTHON-FABRICE-8350064,,"[0,]",No source code
+pip,cryptoaitools,https://security.snyk.io/vuln/SNYK-PYTHON-CRYPTOAITOOLS-8340638,,"[0,]",No source code
+pip,artifact-lab-3-package-24ddbc49,https://security.snyk.io/vuln/SNYK-PYTHON-ARTIFACTLAB3PACKAGE24DDBC49-8323738,,"[0,]",No source code
+pip,123bla,https://security.snyk.io/vuln/SNYK-PYTHON-123BLA-8323737,,"[0,]",No source code
+pip,youreallydontwantthispackage2131,https://security.snyk.io/vuln/SNYK-PYTHON-YOUREALLYDONTWANTTHISPACKAGE2131-8323735,,"[0,]",No source code
+pip,flag-leak-r,https://security.snyk.io/vuln/SNYK-PYTHON-FLAGLEAKR-8323734,,"[0,]",No source code
+pip,browser-cookies3,https://security.snyk.io/vuln/SNYK-PYTHON-BROWSERCOOKIES3-8185018,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the browser-cookies3 package.,"browser-cookies3 is a malicious package. This package contains a malicious code and uses ""typosquatting"" to bait unaware users to install it.",INTRODUCED: 13 OCT 2024,MALICIOUS
+pip,ccl_leveldbases,https://security.snyk.io/vuln/SNYK-PYTHON-CCLLEVELDBASES-8145483,,"[0,]",No source code
+pip,cipherbcryptors,https://security.snyk.io/vuln/SNYK-PYTHON-CIPHERBCRYPTORS-8145482,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the cipherbcryptors package.,"cipherbcryptors is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,exodushcates,https://security.snyk.io/vuln/SNYK-PYTHON-EXODUSHCATES-8145481,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the exodushcates package.,"exodushcates is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,ccl-localstoragerss,https://security.snyk.io/vuln/SNYK-PYTHON-CCLLOCALSTORAGERSS-8145480,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the ccl-localstoragerss package.,"ccl-localstoragerss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,walletdecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-WALLETDECODERSS-8145479,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the walletdecoderss package.,"walletdecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,exodusdecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-EXODUSDECODERSS-8145478,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the exodusdecoderss package.,"exodusdecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,trustdecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-TRUSTDECODERSS-8145477,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the trustdecoderss package.,"trustdecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,phantomdecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-PHANTOMDECODERSS-8145476,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the phantomdecoderss package.,"phantomdecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,trondecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-TRONDECODERSS-8145475,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the trondecoderss package.,"trondecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,atomicdecoderss,https://security.snyk.io/vuln/SNYK-PYTHON-ATOMICDECODERSS-8145474,00,"[0,]",pip,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the atomicdecoderss package.,"atomicdecoderss is a malicious package. This package contains malicious code stealing private keys, mnemonic phrases, and other sensitive crypto wallet data.",INTRODUCED: 2 OCT 2024,MALICIOUS
+pip,minisound,https://security.snyk.io/vuln/SNYK-PYTHON-MINISOUND-8072911,,"[0,]",No source code
+pip,beautifultext,https://security.snyk.io/vuln/SNYK-PYTHON-BEAUTIFULTEXT-8072910,,"[0,]",No source code
+pip,coloredtxt,https://security.snyk.io/vuln/SNYK-PYTHON-COLOREDTXT-8072909,,"[0,]",No source code
+pip,real-ids,https://security.snyk.io/vuln/SNYK-PYTHON-REALIDS-8072908,,"[0,]",No source code
+pip,lr-utils-lib,https://security.snyk.io/vuln/SNYK-PYTHON-LRUTILSLIB-7572543,,"[0,]",No source code
+pip,crytic-compilers,https://security.snyk.io/vuln/SNYK-PYTHON-CRYTICCOMPILERS-7231128,,"[0,]",No source code
+pip,requests-darwin-lite,https://security.snyk.io/vuln/SNYK-PYTHON-REQUESTSDARWINLITE-6836782,,"[0,]",No source code
+pip,pygmme,https://security.snyk.io/vuln/SNYK-PYTHON-PYGMME-6513549,,"[0,]",No source code
+pip,simplejdon,https://security.snyk.io/vuln/SNYK-PYTHON-SIMPLEJDON-6513548,,"[0,]",No source code
+pip,sjimplejson,https://security.snyk.io/vuln/SNYK-PYTHON-SJIMPLEJSON-6513547,,"[0,]",No source code
+pip,pygamr,https://security.snyk.io/vuln/SNYK-PYTHON-PYGAMR-6513544,,"[0,]",No source code
+pip,beaitifulsoop,https://security.snyk.io/vuln/SNYK-PYTHON-BEAITIFULSOOP-6513543,,"[0,]",No source code
+pip,pygaqme,https://security.snyk.io/vuln/SNYK-PYTHON-PYGAQME-6513537,,"[0,]",No source code
+pip,matplolplib,https://security.snyk.io/vuln/SNYK-PYTHON-MATPLOLPLIB-6513536,,"[0,]",No source code
+pip,simpoejson,https://security.snyk.io/vuln/SNYK-PYTHON-SIMPOEJSON-6513530,,"[0,]",No source code
+pip,pytorchy,https://security.snyk.io/vuln/SNYK-PYTHON-PYTORCHY-6513523,,"[0,]",No source code
+pip,matplftlib,https://security.snyk.io/vuln/SNYK-PYTHON-MATPLFTLIB-6513521,,"[0,]",No source code
+pip,matplottib,https://security.snyk.io/vuln/SNYK-PYTHON-MATPLOTTIB-6513516,,"[0,]",No source code
+pip,pygawme,https://security.snyk.io/vuln/SNYK-PYTHON-PYGAWME-6513515,,"[0,]",No source code
+pip,matplotllib,https://security.snyk.io/vuln/SNYK-PYTHON-MATPLOTLLIB-6513511,,"[0,]",No source code
+npm,sc-meta-layer,https://security.snyk.io/vuln/SNYK-JS-SCMETALAYER-8379626,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the sc-meta-layer package.,"sc-meta-layer is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 14 NOV 2024,MALICIOUS
+npm,promotion-banner,https://security.snyk.io/vuln/SNYK-JS-PROMOTIONBANNER-8379625,00,*,npm,CVE NOT AVAILABLE,CWE-506,Avoid using all malicious instances of the promotion-banner package.,"promotion-banner is a malicious package. This package contains malicious code, and its content was removed from the official package manager. While this package might be attempting to impersonate a valid organization, there is no connection between that organization and this package authorship.",INTRODUCED: 14 NOV 2024,MALICIOUS
+npm,code-analysis-shopee-ui-for-scf,https://security.snyk.io/vuln/SNYK-JS-CODEANALYSISSHOPEEUIFORSCF-8379624,,*,No source code

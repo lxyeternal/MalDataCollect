@@ -101,6 +101,5 @@ class SnykDatabase:
             cvss_item_value = cvss_item.find_element(By.CLASS_NAME, "cvss-details-item__value").text
             cvss_info[cvss_item_name] = cvss_item_value
         #  格式化数据，对应起来
-        # format_info_list = format_infodata(pkg_info_dict)
         format_info_list = [manager, pkgname, pkg_complete_url, "00", pkgversion, manager, cve_number, cwe_number, fix_method, overview, update_date, pkg_type]
         write_snyk_pkginfo(self.record_file, format_info_list)

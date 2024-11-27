@@ -41,5 +41,5 @@ def clean_package_folders(base_folder):
 
 
 # Usage of the function
-base_folder = "/Users/blue/Documents/GitHub/malicious-package-dataset/npm"
+base_folder = "/Users/blue/Documents/Github/MalDataCollect/malicious-package-dataset/npm"
 clean_package_folders(base_folder)

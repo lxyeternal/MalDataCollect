@@ -11,7 +11,6 @@
 """
 
 import os
-import json
 import requests
 from google.cloud import bigquery
 from urllib.parse import urlparse
@@ -19,11 +18,16 @@ from urllib.parse import urlparse
 
 def query_bigquery(names):
     # 设置凭证文件路径（使用你的服务账户 JSON 凭证文件）
-    client = bigquery.Client.from_service_account_json('../configs/taicen-36403b880a33.json')
+    # client = bigquery.Client()
+    client = bigquery.Client.from_service_account_json("../configs/metatrust-01-1cf44f6d56e6.json")
     # 构建查询字符串
-    names_condition = ' OR '.join([f'name = "{name}"' for name in names])
+    # 构建查询条件
+    if len(names) == 1:
+        names_condition = f'name = "{names[0]}"'
+    else:
+        names_condition = ' OR '.join([f'name = "{name}"' for name in names])
     query = f"""
-    SELECT name, version, path 
+    SELECT name, version, description, author, author_email,  uploaded_via, upload_time, size, python_version, packagetype, path
     FROM `bigquery-public-data.pypi.distribution_metadata` 
     WHERE {names_condition}
     """
@@ -31,59 +35,88 @@ def query_bigquery(names):
     query_job = client.query(query)
     # 获取查询结果
     results = query_job.result()
-    return results
-
-
-def process_txt_and_query(txt_file_path):
-    names = []
-    # 读取TXT文件
-    with open(txt_file_path, 'r') as file:
-        for line in file:
-            parts = line.strip().split('\t')
-            if len(parts) > 1:
-                names.append(parts[1])
-    # 调用 BigQuery 查询
-    results = query_bigquery(names)
-    # 处理查询结果，按规则筛选路径
-    packages = {}
+    # 解析结果并进行聚合
+    aggregated_results = {}
     for row in results:
-        name = row.name
+        package_name = row.name.lower()
         version = row.version
-        path = row.path
-        # 只保留一个路径，优先级为 .tar.gz > .zip > .whl
-        if (name, version) not in packages:
-            packages[(name, version)] = path
-        else:
-            current_path = packages[(name, version)]
-            if (path.endswith('.tar.gz') or path.endswith('.zip')) and not (current_path.endswith('.tar.gz') or current_path.endswith('.zip')):
-                packages[(name, version)] = path
+        # 如果包名不存在，初始化基本信息
+        if package_name not in aggregated_results:
+            aggregated_results[package_name] = {
+                'description': row.description,
+                'author': row.author,
+                'author_email': row.author_email,
+                'versions': {}
+            }
+        # 如果版本不存在，初始化该版本的信息
+        if version not in aggregated_results[package_name]['versions']:
+            aggregated_results[package_name]['versions'][version] = {
+                'uploaded_via': set(),
+                'upload_time': set(),
+                'size': set(),
+                'python_version': set(),
+                'packagetype': set(),
+                'path': set()  # 新增 path 字段
+            }
+        # 添加版本特定的信息
+        if row.uploaded_via is not None:
+            aggregated_results[package_name]['versions'][version]['uploaded_via'].add(row.uploaded_via)
+        if row.upload_time is not None:
+            # 将日期转换为指定格式的字符串
+            date_str = row.upload_time.date().strftime('%Y-%m-%d')
+            aggregated_results[package_name]['versions'][version]['upload_time'].add(date_str)
+        if row.size is not None:
+            aggregated_results[package_name]['versions'][version]['size'].add(row.size)
+        if row.python_version is not None:
+            aggregated_results[package_name]['versions'][version]['python_version'].add(row.python_version)
+        if row.packagetype is not None:
+            aggregated_results[package_name]['versions'][version]['packagetype'].add(row.packagetype)
+        if row.path is not None:  # 新增处理 path 字段
+            aggregated_results[package_name]['versions'][version]['path'].add(row.path)
+    return aggregated_results
 
-    # 调用下载函数
-    download_packages(packages)
+
+def get_priority(file_path):
+    """
+    根据文件类型返回优先级，数字越小优先级越高
+    """
+    if file_path.endswith('.zip'):
+        return 0
+    elif file_path.endswith('.tar.gz'):
+        return 1
+    elif file_path.endswith('.whl'):
+        return 2
+    return 3
 
 
-def download_packages(packages):
-    for (name, version), link in packages.items():
-        full_link = f"https://files.pythonhosted.org/packages/{link}"
-
-        # 创建保存路径
-        save_dir = f"/Users/blue/Downloads/data/{name}/{version}"
-        os.makedirs(save_dir, exist_ok=True)
-
-        # 获取文件名
-        file_name = os.path.basename(urlparse(full_link).path)
-
-        # 下载文件
-        response = requests.get(full_link)
-        if response.status_code == 200:
-            save_path = os.path.join(save_dir, file_name)
-            with open(save_path, 'wb') as f:
-                f.write(response.content)
-            print(f"Downloaded: {save_path}")
-        else:
-            print(f"Failed to download: {full_link}")
-
-
-if __name__ == "__main__":
-    txt_file_path = "/Users/blue/Documents/GitHub/MalDataCollect/records/osv_pypi_dataset.txt"  # 请替换为你的 TXT 文件路径
-    process_txt_and_query(txt_file_path)
+def download_packages(query_results):
+    for package_name, package_info in query_results.items():
+        # 遍历每个版本
+        for version, version_info in package_info['versions'].items():
+            # 获取该版本的所有路径
+            paths = version_info.get('path', set())
+            if not paths:
+                print(f"No files found for {package_name} version {version}")
+                continue
+            # 将路径列表按优先级排序
+            sorted_paths = sorted(paths, key=get_priority)
+            # 只取优先级最高的文件
+            selected_path = sorted_paths[0]
+            full_link = f"https://files.pythonhosted.org/packages/{selected_path}"
+            # 创建保存路径
+            save_dir = f"/Users/blue/Downloads/data/{package_name}/{version}"
+            os.makedirs(save_dir, exist_ok=True)
+            # 获取文件名
+            file_name = os.path.basename(urlparse(full_link).path)
+            # 下载文件
+            try:
+                response = requests.get(full_link)
+                if response.status_code == 200:
+                    save_path = os.path.join(save_dir, file_name)
+                    with open(save_path, 'wb') as f:
+                        f.write(response.content)
+                    print(f"Successfully downloaded: {save_path}")
+                else:
+                    print(f"Failed to download {full_link} - Status code: {response.status_code}")
+            except Exception as e:
+                print(f"Error downloading {full_link}: {str(e)}")

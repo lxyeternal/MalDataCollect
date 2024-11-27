@@ -1,0 +1,14 @@
+2024-11-26 15:59:50,729 - INFO - Cloning repository to /Users/blue/Documents/GitHub/malicious-packages
+2024-11-26 16:00:01,762 - INFO - Starting analysis for pypi
+2024-11-26 16:00:02,045 - INFO - Found 8531 JSON files for pypi
+2024-11-26 16:00:02,877 - INFO - Completed analysis for pypi
+2024-11-26 16:00:02,877 - INFO - Starting analysis for npm
+2024-11-26 16:00:03,449 - INFO - Found 17050 JSON files for npm
+2024-11-26 16:00:05,123 - INFO - Completed analysis for npm
+2024-11-26 19:43:20,250 - INFO - Pulling latest changes
+2024-11-26 19:43:21,039 - INFO - Starting analysis for pypi
+2024-11-26 19:43:21,250 - INFO - Found 8531 JSON files for pypi
+2024-11-26 19:43:22,764 - INFO - Completed analysis for pypi
+2024-11-26 19:43:22,764 - INFO - Starting analysis for npm
+2024-11-26 19:43:23,239 - INFO - Found 17050 JSON files for npm
+2024-11-26 19:43:26,174 - INFO - Completed analysis for npm

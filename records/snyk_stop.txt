@@ -2,4 +2,4 @@ go	a
 maven	b
 npm	@diotoborg/eos-eum
 nuget	pathoschild.stardew.mod.buildconfig
-pip	reqjuests
+pip	py-corx

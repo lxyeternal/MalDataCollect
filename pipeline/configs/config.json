@@ -1,0 +1,22 @@
+{
+    "dataset_pypi": "../../malicious-package-dataset/pypi/",
+    "dataset_npm": "../../malicious-package-dataset/npm/",
+    "dataset_go": "../../malicious-package-dataset/go/",
+    "dataset_maven": "../../malicious-package-dataset/maven/",
+    "dataset_nuget": "../../malicious-package-dataset/nuget/",
+    "dataset_rubygems": "../../malicious-package-dataset/rubygems/",
+    "records_dir": "../records",
+    "chromedriver": "../utils/chromedriver/macarm/chromedriver",
+    "snyk_baseurl": "https://security.snyk.io/",
+    "synk_vulurl": "https://security.snyk.io/vuln/",
+    "osv_baseurl": "https://osv.dev/list?ecosystem={}",
+    "record_file": "../records/snyk_malicious.csv",
+    "google_cloud_key": "../configs/metatrust-01-1cf44f6d56e6.json",
+    "osv_repo_link": "https://github.com/ossf/malicious-packages.git",
+    "pypi_mirrors": {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"},
+    "npm_mirrors": {"taobao": "https://registry.npmmirror.com/", "tencent": "http://mirrors.cloud.tencent.com/npm/", "huawei": "https://mirrors.huaweicloud.com/repository/npm/", "cnpmjs": "https://r.cnpmjs.org/"},
+    "go_mirrors": {"tencent": "https://mirrors.cloud.tencent.com/go/", "huawei": "https://repo.huaweicloud.com/repository/goproxy/", "douban": "http://goproxy.cn/", "aliyun": "https://mirrors.aliyun.com/goproxy/"},
+    "maven_mirrors": {"tsinghua": "https://repo1.maven.org/maven2/", "tencent": "http://mirrors.cloud.tencent.com/maven/", "douban": "http://repo1.maven.org/maven2/", "sustech": "https://mirrors.sustech.edu.cn/maven/"},
+    "rubygems_mirrors": {"tencent": "https://mirrors.cloud.tencent.com/rubygems/gems/", "aliyun": "https://mirrors.aliyun.com/rubygems/"},
+    "nuget_mirrors": {"huawei": "https://mirrors.huaweicloud.com/repository/nuget/v3/registration5-semver1/{}/index.json"}
+}
