@@ -18,7 +18,6 @@ from urllib.parse import urlparse
 
 def query_bigquery(google_cloud_key, names):
     # 设置凭证文件路径（使用你的服务账户 JSON 凭证文件）
-    # client = bigquery.Client()
     client = bigquery.Client.from_service_account_json(google_cloud_key)
     # 构建查询字符串
     # 构建查询条件
@@ -75,6 +74,8 @@ def query_bigquery(google_cloud_key, names):
             aggregated_results[package_name]['versions'][version]['path'].add(row.path)
     return aggregated_results
 
+
+query_bigquery("../configs/metatrust-01-1cf44f6d56e6.json", ["requests"])
 
 def get_priority(file_path):
     """
