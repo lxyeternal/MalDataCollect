@@ -5,3 +5,4 @@ dataset/
 codes/__pycache__/
 DS_Store
 utils/chromedriver/
+configs/metatrust-01-a8043294c5af.json
