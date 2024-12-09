@@ -84,19 +84,18 @@ class SnykDatabase:
             if snyk_pkgs is None:
                 print(f"已采集完所有新包，停止 {package_manager} 的采集")
                 break
-
             for snyk_pkg in snyk_pkgs:
-                if snyk_pkg[1] in self.collected_packages[package_manager]:
-                    print(f"已经采集过该包：{snyk_pkg[1]}")
-                    continue
-                if package_manager == "pip":
-                    query_result = query_bigquery(self.google_cloud_key, [snyk_pkg[1]])
-                    if query_result:
-                        download_packages(self.pypi_dataset_path, query_result)
-                elif package_manager == "npm":
-                    npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.npm_dataset_path)
-                # 无论下载是否成功，都获取包的详细信息
                 try:
+                    if snyk_pkg[1] in self.collected_packages[package_manager]:
+                        print(f"已经采集过该包：{snyk_pkg[1]}")
+                        continue
+                    if package_manager == "pip":
+                        query_result = query_bigquery(self.google_cloud_key, [snyk_pkg[1]])
+                        if query_result:
+                            download_packages(self.pypi_dataset_path, query_result)
+                    elif package_manager == "npm":
+                        npm_pkg_links(self.npm_mirrors, snyk_pkg[1], self.npm_dataset_path)
+                # 无论下载是否成功，都获取包的详细信息
                     self.snyk_pkginfo(package_manager, snyk_pkg[0], snyk_pkg[1], snyk_pkg[2])
                 except Exception as e:
                     print(f"获取 {snyk_pkg[1]} 信息失败: {str(e)}")
@@ -123,26 +122,34 @@ class SnykDatabase:
         self.driver.get(os.path.join(self.snyk_vulurl, package_manager, page_index))
         self.driver.implicitly_wait(10)
         vulns_table = self.driver.find_element(By.CLASS_NAME, "vulns-table")
-        table_tbody = vulns_table.find_element(By.CLASS_NAME, "vue--table__tbody")
+        table_tbody = vulns_table.find_element(By.CLASS_NAME, "vulns-table__table")
         vue_table_row = table_tbody.find_elements(By.TAG_NAME, "tr")
         for row_index, row in enumerate(vue_table_row):
-            row_tds = row.find_elements(By.TAG_NAME, "td")
-            for td_index, td in enumerate(row_tds):
-                if td_index == 0:
-                    td_type = td.text.split("\n")[1].strip()
-                    td_href = td.find_element(By.TAG_NAME, "a").get_attribute('href')
-                    if td_type != 'Malicious Package':
-                        break
-                if td_index == 1:
-                    pkgname = td.text.split(" ")[0].strip()
-                    pkgversion = td.text.replace(pkgname, "").strip()
+            try:
+                row_tds = row.find_elements(By.TAG_NAME, "td")
+                for td_index, td in enumerate(row_tds):
+                    if td_index == 0:
+                        td_type = td.text.split("\n")[1].strip()
+                        td_href = td.find_element(By.TAG_NAME, "a").get_attribute('href')
+                        if td_type != 'Malicious Package':
+                            break
+                    if td_index == 1:
+                        # 直接获取第一个 a 标签的文本作为包名
+                        pkgname = td.find_element(By.TAG_NAME, "a").text.strip()
+                        # 获取 span 中的版本号
+                        try:
+                            pkgversion = td.find_element(By.TAG_NAME, "span").text.strip()
+                        except:
+                            pkgversion = ""
 
-                    # 判断是否已采集
-                    if pkgname in self.collected_packages[package_manager]:
-                        print(f"发现已采集的包：{pkgname}，停止采集")
-                        return None  # 返回 None 表示需要停止采集
+                        # 判断是否已采集
+                        if pkgname in self.collected_packages[package_manager]:
+                            print(f"发现已采集的包：{pkgname}，停止采集")
+                            return None  # 返回 None 表示需要停止采集
 
-                    snyk_pkgs.append([td_href, pkgname, pkgversion])
+                        snyk_pkgs.append([td_href, pkgname, pkgversion])
+            except:
+                print(f"解析第 {row_index} 行数据失败")
         return snyk_pkgs
 
 
@@ -160,9 +167,16 @@ class SnykDatabase:
         cve_number = vuln_info_block.find_element(By.XPATH, "span[@data-snyk-test='no-cve']").text
         cwe_number = vuln_info_block.find_element(By.XPATH, "span[@data-snyk-test='cwe']").text.replace(
             "OPEN THIS LINK IN A NEW TAB", "").strip()
-        vuln_fix_content = left_div.find_elements(By.CLASS_NAME, "markdown-section")
-        fix_method = vuln_fix_content[0].find_element(By.CLASS_NAME, "vue--prose").text
-        overview = vuln_fix_content[1].find_element(By.CLASS_NAME, "vue--prose").text
+        try:
+            vuln_fix_content = left_div.find_elements(By.CLASS_NAME, "markdown-section")
+            fix_method = vuln_fix_content[0].find_element(By.CLASS_NAME, "prose").text
+        except:
+            vuln_fix_content = ""
+            fix_method = ""
+        try:
+            overview = vuln_fix_content[1].find_element(By.CLASS_NAME, "prose").text
+        except:
+            overview = ""
         try:
             relink_block = left_div.find_elements(By.CSS_SELECTOR, ".vue--heading.heading")[2]
             li_tags = relink_block.find_elements(By.TAG_NAME, "li")
@@ -198,7 +212,7 @@ class SnykDatabase:
 
 
     def start_collect(self):
-        for ecosystem in ['npm', 'pip']:
+        for ecosystem in ['pip', 'npm']:
             self.collect_snyk(ecosystem)
         self.driver.quit()
         self.infodriver.quit()

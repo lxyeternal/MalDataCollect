@@ -20,8 +20,7 @@ from file_operation import create_package_info, save_package_info
 
 
 class OSVDatabase:
-    def __init__(self, google_cloud_key, pypi_dataset_path, npm_dataset_path, npm_mirrors,
-                 base_dir, records_dir, repo_url):
+    def __init__(self, google_cloud_key, pypi_dataset_path, npm_dataset_path, npm_mirrors, base_dir, records_dir, repo_url):
         self.google_cloud_key = google_cloud_key
         self.pypi_dataset_path = pypi_dataset_path
         self.npm_dataset_path = npm_dataset_path
@@ -94,41 +93,65 @@ class OSVDatabase:
             repo = git.Repo(self.repo_path)
             repo.remotes.origin.pull()
 
+    def _get_affected_versions(self, affected):
+        """
+        从受影响的包信息中提取版本信息
+        支持直接的版本列表和范围事件两种格式
+        """
+        versions = []
+        # 直接获取 versions 列表
+        if "versions" in affected:
+            versions.extend(affected["versions"])
+        # 处理 ranges 情况
+        if "ranges" in affected:
+            for range_info in affected["ranges"]:
+                if isinstance(range_info, dict):
+                    events = range_info.get("events", [])
+                    for event in events:
+                        if isinstance(event, dict) and "introduced" in event:
+                            # 如果 introduced 为 "0"，表示从第一个版本开始就受影响
+                            if event["introduced"] == "0" or event["introduced"] == 0:
+                                versions.append("0")
+        return versions
+
     def filter_new_osv_files(self):
         """Filter out already processed OSV files and cache new ones"""
-        # 文件系统路径使用 pypi，其他地方使用 pip
         path_manager_map = {'npm': 'npm', 'pip': 'pypi'}
         for package_manager in ['pip', 'npm']:
             osv_dir = os.path.join(self.repo_path, "osv", "malicious", path_manager_map[package_manager])
+            print(f"Checking for new OSV files in {osv_dir}")
             json_files = self._get_json_files(osv_dir)
+
             for json_file in json_files:
                 try:
                     with open(json_file, 'r', encoding='utf-8') as f:
                         osv_data = json.load(f)
 
-                    osv_id = osv_data.get("id")
-                    if not osv_id or osv_id in self.processed_ids[package_manager]:
-                        continue  # 跳过已经处理过的ID
+                    osv_id = osv_data.get("id", "")  # 如果没有 id，使用空字符串
+                    if osv_id in self.processed_ids[package_manager]:
+                        print(f"已经处理过的ID: {osv_id}")
+                        continue
 
-                    # 缓存未处理的OSV数据，包括包管理器、包名、版本号、文件路径等信息
                     affected_list = osv_data.get("affected", [])
                     if isinstance(affected_list, list):
                         for affected in affected_list:
                             if isinstance(affected, dict):
                                 package_info = affected.get("package", {})
                                 if isinstance(package_info, dict):
-                                    pkg_name = package_info.get("name")
+                                    pkg_name = package_info.get("name", "")  # 如果没有名称，使用空字符串
                                     versions = self._get_affected_versions(affected)
-                                    if pkg_name and versions:
-                                        self.new_osv_data.append({
-                                            "package_manager": package_manager,
-                                            "osv_id": osv_id,
-                                            "pkg_name": pkg_name,
-                                            "versions": versions,
-                                            "file_path": json_file
-                                        })
+
+                                    # 保存数据，即使某些字段为空
+                                    self.new_osv_data.append({
+                                        "package_manager": package_manager,
+                                        "osv_id": osv_id,
+                                        "pkg_name": pkg_name,
+                                        "versions": versions,
+                                        "file_path": json_file
+                                    })
                 except Exception as e:
-                    print(f"处理文件失败 {json_file}: {str(e)}")
+                    print(f"处理文件 {json_file} 时发生错误: {str(e)}")
+                    continue  # 继续处理下一个文件
 
     def collect_osv(self):
         """Collect malicious package data from filtered OSV data"""
@@ -167,7 +190,7 @@ class OSVDatabase:
 
                     # Try to download package
                     try:
-                        if package_manager == "pypi":
+                        if package_manager == "pip":
                             query_result = query_bigquery(self.google_cloud_key, [pkg_name])
                             if query_result:
                                 download_packages(self.pypi_dataset_path, query_result)

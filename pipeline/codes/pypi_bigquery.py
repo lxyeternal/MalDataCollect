@@ -74,9 +74,6 @@ def query_bigquery(google_cloud_key, names):
             aggregated_results[package_name]['versions'][version]['path'].add(row.path)
     return aggregated_results
 
-
-query_bigquery("../configs/metatrust-01-1cf44f6d56e6.json", ["requests"])
-
 def get_priority(file_path):
     """
     根据文件类型返回优先级，数字越小优先级越高
