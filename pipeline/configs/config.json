@@ -1,6 +1,6 @@
 {
-    "dataset_pypi": "../../malicious-package-dataset/test_pypi/",
-    "dataset_npm": "../../malicious-package-dataset/test_npm/",
+    "dataset_pypi": "../../malicious-package-dataset/pypi/",
+    "dataset_npm": "../../malicious-package-dataset/npm/",
     "dataset_go": "../../malicious-package-dataset/go/",
     "dataset_maven": "../../malicious-package-dataset/maven/",
     "dataset_nuget": "../../malicious-package-dataset/nuget/",

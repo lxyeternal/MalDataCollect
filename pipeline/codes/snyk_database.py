@@ -141,7 +141,6 @@ class SnykDatabase:
                             pkgversion = td.find_element(By.TAG_NAME, "span").text.strip()
                         except:
                             pkgversion = ""
-
                         # 判断是否已采集
                         if pkgname in self.collected_packages[package_manager]:
                             print(f"发现已采集的包：{pkgname}，停止采集")

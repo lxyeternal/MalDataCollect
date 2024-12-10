@@ -117,7 +117,7 @@ class OSVDatabase:
     def filter_new_osv_files(self):
         """Filter out already processed OSV files and cache new ones"""
         path_manager_map = {'npm': 'npm', 'pip': 'pypi'}
-        for package_manager in ['pip', 'npm']:
+        for package_manager in ['npm', 'pip']:
             osv_dir = os.path.join(self.repo_path, "osv", "malicious", path_manager_map[package_manager])
             print(f"Checking for new OSV files in {osv_dir}")
             json_files = self._get_json_files(osv_dir)
