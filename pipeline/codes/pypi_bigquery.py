@@ -118,3 +118,13 @@ def download_packages(pypi_dataset_path, query_results):
                     print(f"Failed to download {full_link} - Status code: {response.status_code}")
             except Exception as e:
                 print(f"Error downloading {full_link}: {str(e)}")
+
+
+
+if __name__ == '__main__':
+    google_cloud_key = '/Users/blue/Documents/Github/MalDataCollect/configs/metatrust-01-a8043294c5af.json'
+    names = ['faq', 'a-function', 'an-instance']
+    pypi_dataset_path = 'pypi_dataset'
+    query_results = query_bigquery(google_cloud_key, names)
+    print(query_results)
+    download_packages(pypi_dataset_path, query_results)
