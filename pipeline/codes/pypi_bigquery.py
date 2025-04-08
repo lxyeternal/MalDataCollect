@@ -87,44 +87,45 @@ def get_priority(file_path):
     return 3
 
 
-def download_packages(pypi_dataset_path, query_results):
+def download_packages(pypi_dataset_path, query_results, versions):
     for package_name, package_info in query_results.items():
         # 遍历每个版本
         for version, version_info in package_info['versions'].items():
-            # 获取该版本的所有路径
-            paths = version_info.get('path', set())
-            if not paths:
-                print(f"No files found for {package_name} version {version}")
-                continue
-            # 将路径列表按优先级排序
-            sorted_paths = sorted(paths, key=get_priority)
-            # 只取优先级最高的文件
-            selected_path = sorted_paths[0]
-            full_link = f"https://files.pythonhosted.org/packages/{selected_path}"
-            # 创建保存路径
-            save_dir = os.path.join(pypi_dataset_path, package_name, version)
-            os.makedirs(save_dir, exist_ok=True)
-            # 获取文件名
-            file_name = os.path.basename(urlparse(full_link).path)
-            # 下载文件
-            try:
-                response = requests.get(full_link)
-                if response.status_code == 200:
-                    save_path = os.path.join(save_dir, file_name)
-                    with open(save_path, 'wb') as f:
-                        f.write(response.content)
-                    print(f"Successfully downloaded: {save_path}")
-                else:
-                    print(f"Failed to download {full_link} - Status code: {response.status_code}")
-            except Exception as e:
-                print(f"Error downloading {full_link}: {str(e)}")
+            # 检查是否需要下载该版本
+            if "0" in versions or version in versions:
+                paths = version_info.get('path', set())
+                if not paths:
+                    print(f"No files found for {package_name} version {version}")
+                    continue
+                # 将路径列表按优先级排序
+                sorted_paths = sorted(paths, key=get_priority)
+                # 只取优先级最高的文件
+                selected_path = sorted_paths[0]
+                full_link = f"https://files.pythonhosted.org/packages/{selected_path}"
+                # 创建保存路径
+                save_dir = os.path.join(pypi_dataset_path, package_name, version)
+                os.makedirs(save_dir, exist_ok=True)
+                # 获取文件名
+                file_name = os.path.basename(urlparse(full_link).path)
+                # 下载文件
+                try:
+                    response = requests.get(full_link)
+                    if response.status_code == 200:
+                        save_path = os.path.join(save_dir, file_name)
+                        with open(save_path, 'wb') as f:
+                            f.write(response.content)
+                        print(f"Successfully downloaded: {save_path}")
+                    else:
+                        print(f"Failed to download {full_link} - Status code: {response.status_code}")
+                except Exception as e:
+                    print(f"Error downloading {full_link}: {str(e)}")
 
 
 
-if __name__ == '__main__':
-    google_cloud_key = '/Users/blue/Documents/Github/MalDataCollect/configs/metatrust-01-a8043294c5af.json'
-    names = ['faq', 'a-function', 'an-instance']
-    pypi_dataset_path = 'pypi_dataset'
-    query_results = query_bigquery(google_cloud_key, names)
-    print(query_results)
-    download_packages(pypi_dataset_path, query_results)
+# if __name__ == '__main__':
+#     google_cloud_key = '/Users/blue/Documents/Github/MalDataCollect/pipeline/configs/cryptic-gate-453708-g4-65479bc3c72d.json'
+#     names = ['faq', 'a-function', 'an-instance']
+#     pypi_dataset_path = 'pypi_dataset'
+#     query_results = query_bigquery(google_cloud_key, names)
+#     print(query_results)
+#     download_packages(pypi_dataset_path, query_results)

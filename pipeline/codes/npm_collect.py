@@ -15,7 +15,7 @@ import requests
 from file_operation import mkdir
 
 
-def npm_pkg_links(npm_mirrors, pkgname, dataset_npm) -> int:
+def npm_pkg_links(npm_mirrors, pkgname, dataset_npm, versions) -> int:
     flag = 0
     for mirror, url in npm_mirrors.items():
         response = requests.get(os.path.join(url, pkgname))
@@ -30,6 +30,8 @@ def npm_pkg_links(npm_mirrors, pkgname, dataset_npm) -> int:
                 if i >= 10:  # Only process the first 10 versions
                     break
                 version = details.get('version', 'N/A')
+                if "0" not in versions and version not in versions:
+                    continue
                 complete_link = details.get('dist', {}).get('tarball', 'N/A')
                 link_filename = complete_link.split("/")[-1]
                 mkdir(dataset_npm, pkgname.replace("/", "##"), version)

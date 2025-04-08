@@ -117,7 +117,7 @@ class OSVDatabase:
     def filter_new_osv_files(self):
         """Filter out already processed OSV files and cache new ones"""
         path_manager_map = {'npm': 'npm', 'pip': 'pypi'}
-        for package_manager in ['npm', 'pip']:
+        for package_manager in ['pip', 'npm']:
             osv_dir = os.path.join(self.repo_path, "osv", "malicious", path_manager_map[package_manager])
             print(f"Checking for new OSV files in {osv_dir}")
             json_files = self._get_json_files(osv_dir)
@@ -193,10 +193,10 @@ class OSVDatabase:
                         if package_manager == "pip":
                             query_result = query_bigquery(self.google_cloud_key, [pkg_name])
                             if query_result:
-                                download_packages(self.pypi_dataset_path, query_result)
+                                download_packages(self.pypi_dataset_path, query_result, versions)
                         elif package_manager == "npm":
                             if isinstance(self.npm_mirrors, dict):
-                                npm_pkg_links(self.npm_mirrors, pkg_name, self.npm_dataset_path)
+                                npm_pkg_links(self.npm_mirrors, pkg_name, self.npm_dataset_path, versions)
                     except Exception as e:
                         print(f"下载包失败 {pkg_name}: {str(e)}")
                         continue  # 如果下载失败，跳过此包
