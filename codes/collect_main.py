@@ -176,5 +176,5 @@ class CollectMain:
 if __name__ == '__main__':
     collect_main = CollectMain("npm")
     # collect_main.collect_manual()
-    collect_main.collect_snyk()
-    # collect_main.collect_osv()
+    # collect_main.collect_snyk()
+    collect_main.collect_osv()

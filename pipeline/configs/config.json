@@ -11,7 +11,7 @@
     "synk_vulurl": "https://security.snyk.io/vuln/",
     "osv_baseurl": "https://osv.dev/list?ecosystem={}",
     "record_file": "../records/snyk_malicious.csv",
-    "google_cloud_key": "../configs/metatrust-01-a8043294c5af.json",
+    "google_cloud_key": "../configs/cryptic-gate-453708-g4-65479bc3c72d.json",
     "osv_repo_link": "https://github.com/ossf/malicious-packages.git",
     "pypi_mirrors": {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"},
     "npm_mirrors": {"taobao": "https://registry.npmmirror.com/", "tencent": "http://mirrors.cloud.tencent.com/npm/", "huawei": "https://mirrors.huaweicloud.com/repository/npm/", "cnpmjs": "https://r.cnpmjs.org/"},

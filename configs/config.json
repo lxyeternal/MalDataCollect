@@ -15,7 +15,7 @@
     "npm_manual_file": "../records/osv_npm_dataset.txt",
     "rubygems_manual_file": "../records/rubygems_manual_packages.txt",
     "stop_file": "../records/snyk_stop.txt",
-    "google_cloud_key": "../configs/metatrust-01-1cf44f6d56e6.json",
+    "google_cloud_key": "../configs/cryptic-gate-453708-g4-65479bc3c72d.json",
     "osv_repo_link": "https://github.com/ossf/malicious-packages.git",
     "pypi_mirrors": {"tencent": "http://mirrors.cloud.tencent.com/pypi/", "tsinghua": "https://pypi.tuna.tsinghua.edu.cn/", "douban": "http://pypi.doubanio.com/"},
     "npm_mirrors": {"taobao": "https://registry.npmmirror.com/", "tencent": "http://mirrors.cloud.tencent.com/npm/", "huawei": "https://mirrors.huaweicloud.com/repository/npm/", "cnpmjs": "https://r.cnpmjs.org/"},

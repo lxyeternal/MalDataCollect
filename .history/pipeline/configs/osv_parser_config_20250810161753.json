@@ -1,0 +1,26 @@
+{
+  "osv_parser": {
+    "repository": {
+      "url": "https://github.com/ossf/malicious-packages",
+      "local_path": "malicious-packages"
+    },
+    "output": {
+      "directory": "records",
+      "filename_prefix": "osv_pypi_malicious",
+      "include_timestamp": true
+    },
+    "parsing": {
+      "ecosystem": "pypi",
+      "extract_fields": [
+        "id",
+        "package",
+        "modified",
+        "published",
+        "versions",
+        "references",
+        "credits",
+        "malicious_origins"
+      ]
+    }
+  }
+} 

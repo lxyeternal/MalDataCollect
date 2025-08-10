@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cryptic-gate-453708-g4",
+  "private_key_id": "65479bc3c72d013ba08ab69489ba200361461472",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtRhGI5q/FDaJV\nvTwgTcoi8SpSsdzlaJ7BdkvK2+vQebaF+uqMWMIF69dSYNa1Au9Q2yL1PVx2n1/d\nmfAq6KTHKJCH8NVf+7qH8zfJEeCzof/Tw9CtbQh7lOFGpTd/FRpYj6Lvwk/44fUu\nV8kfjfp378yhjbSpP56gU997r59rm/hexct9M39DPhObCSIvYaDD4It5w21pkR//\nKVCDbHVjKgUwG8oYHt5HjCWXyu6L4MqWjdPrAnNl9P0vp4hicXFIQnEwldvNztXN\ncgpPk1Cn3xWPeeX8AgajZlDzUkTjfYqjzeVafzDRhior+qgvm4cXisIW0b4/w4+c\nmT6YJ3v/AgMBAAECggEASb7DEr1/vIG3f/84mlURPTrf9O8PITIcMyF6U32zCPjs\nRmyKq63Q8f00mLJvXv2/Re3mHHL/qdrdza5JKbH3A25PyROmdKHp+xd4PCLYPAus\nGoBCDbWUgShVkqAZlQQxwNRtF9be+4GLvKwPBNeD7MzKDk4FwGy7wefAe189HepA\nDrsvidpLC1jDydMoD8XCFnO9Y8kdvy8RnzJjIKuKvh6Sh/lMx71QZ9pvsW5+w8FH\nR83wgnJ8PpYD4/4LWiqY3aZxT+B3NU7ZA/H7hp7dG5f9W28ubFNF7VXV6T+ptUC7\nO2wzPcqk4JtxK860skTjpvfOrrmjK41J9Ahy6bsG2QKBgQD0eHy0E0RkQG8Iszct\nqOMEaNYlASem/oMQ9vcN+kkCtpgjfkKBe8q63++y4Q/vyOEl/j1Ll8NWdnYh9jrA\nWYOBBUzU5OCmxteRxVwVurLljgxhiBeUTFHWXfW3bV+PIWJ/yCruCQvwOAMb4bPS\nMJx5DshQsTPH5U0BIy4RWkOjxwKBgQC1cgPi2ud03imRymQeDDdq5cTkNMlzFmcH\nQqRxDLytUhWv1ZSklqyRYmGNRZX0hXDTrrPYhj/PDd0L+BdcvuBffRYHJOjUG83i\nIqWuFpd21LOyDAz/CZhVFpL2/f8zp6jVvi9IrEE2OeHnfyOZ5xmwvFDI3lQ4zRDV\n7pZM7W92CQKBgDi49AY8KjQwlxKnsnfPpczSHk27tN2UVAjNpIkDt4j/oNErbHbq\nqCEv8EfK3I3ASC0ujj5J2jLnjYVXwk369v4qoqcK6+0GWeIirrkD9po4mTrP/tiT\n1LEuX+LNZ8yn7FjFsuBEDRcRh/ciKTzttoCII4ZFd0Q8Od+3r+qqzOLlAoGAKlZc\nScbCUyazlG0hR1GabLsIYidfChekGrGWJTrPm7GXldvEP1NZGONX19rwzomEdiBB\nnrhUkz+s4GoXKXDwcdeCGFCoczW5qJZlCmYDGZswAs+FCM14WgJWcIN71NW+M4GZ\nDuACp2CCMb4c1IB0IiUOxI/8HvTahNCTCYgtheECgYEAzJsSi+pZ0YxE7e7FUb5/\n55qTgbp+QAxhMu0aQ0OSjhitj97TJ+ika73ucE/eoyQsxFsf5Kcsth0ao52KUKfy\nFDmRepmRF4+Cah36EaghNUKMUZzd+RzOXWnIiBf9XpBAYoAUmOnrBs7KhIkAnar5\nknt8QmRPGznT99MzbFkCqmQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pypi-api@cryptic-gate-453708-g4.iam.gserviceaccount.com",
+  "client_id": "103523633652810325544",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pypi-api%40cryptic-gate-453708-g4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
